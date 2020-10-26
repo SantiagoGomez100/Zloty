@@ -1,0 +1,129 @@
+.imagen {
+    height: 620px;
+    background-position: center;
+    background-size:cover;
+    background: linear-gradient(to right, #b55224d4, #7b4d36ee,  #0c082caa),url(../../imagenes/fondo.jpg);
+    position: relative;
+
+}
+.containerprincipal{
+    padding:0px !important;
+    margin-left: 0px  !important;
+}
+.row{
+    margin-right: 0px !important;
+    padding-right: 0px !important;
+}
+
+.inputPeque {
+    width: 100%;
+}
+.divBoton{
+    display: flex;
+
+}
+.formulario{
+    width: 83%;
+}
+.contenedorCompleto{
+display: flex;
+width:95%;
+flex-wrap: wrap;
+align-content: center;
+justify-content: center;
+
+}
+.olvidoContrase{
+    font-size: 18px;
+    color: #ec7607f6;
+    font-weight: lighter;
+    text-decoration: none;
+    margin:5% 18% 0% 5px;
+}
+.olvidoContrase:hover{
+    font-size: 18px;
+    margin:5% 18% 0px 5px;
+    color: #ec7607f6;
+    font-weight: lighter;
+    text-decoration: none;
+    
+}
+.fa-arrow-left{
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.217);
+    font-weight: lighter;
+}
+.fa-arrow-left:hover{
+    font-size: 32px;
+    color:#ec7607f6;
+}
+
+.colorBoton {
+    background-color: #ec7607f6;
+    color: aliceblue;
+    width: 50%;
+    font-size: 18px;
+    
+}
+.colorBoton:hover {
+    background-color: #ec7607f6;
+    color: aliceblue;
+    width: 50%;
+}
+
+.caption {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+
+.letraImagen {
+
+    color: aliceblue;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+
+}
+
+.textoicon {
+    width: 80%;
+    margin: 5% auto auto 10%;
+
+}
+
+.textLadoIcon {
+    display: flex;
+    width: 100%;
+    color: white;
+    margin-top: 20px;
+
+}
+
+.mensajeparrafo {
+    margin-left: 9%;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.fa-check-circle {
+    color: rgba(255, 255, 255, 0.591);
+    font-size: 25px;
+    margin-top: 10px;
+
+
+}
+.colorRegistro{
+margin-left: 30%;
+    border:2px solid #ec7607f6 ;
+    color: aliceblue;
+    width: 35%;
+    font-size: 18px;
+}
+.colorRegistro:hover{
+    margin-left: 30%;
+       background-color:  #ec7607f6 ;
+        color: aliceblue;
+        width: 35%;
+        font-size: 18px;
+    }

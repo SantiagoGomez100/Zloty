@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/registrarse.css">
+    <title>Registrate!</title>
+
+</head>
+
+<body>
+
+    <section>
+        <div class="container containerprincipal">
+            <div class="row">
+                <div class="col-lg-6 imagen">
+                    <div><img src="../imagenes/bigblanco.png" alt="" width="200px" style="margin-left:9%;"></div>
+
+                    <div class="caption ">
+                        <section>
+                            <h3 class=" letraImagen">¡Sí, Ya estas Registrado!</h3>
+                        </section>
+                        <div class="textoicon">
+                            <div class="textLadoIcon">
+                                <i class="far fa-check-circle">
+                                </i>
+                                <p class="mensajeparrafo">aqui va una frase inspiradora</p>
+                            </div>
+                            <div class="textLadoIcon">
+
+                                <button type="submit" class="btn colorRegistro mt-3"> <a href="../inicioSesion/inicioSesion.html"
+                                        style="text-decoration: none; color: white;">Inicio Sesión!</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6  contenedorCompleto">
+                    <div>
+                        <form>
+                            <h2 class="contenedorCompleto" style="text-align: center;">Regístrate!</h2><br>
+
+                            <div class="form-row contenedorCompleto">
+                                <div class="form-group col-md-4">
+                                    <label for="inputAddress">Nombre</label>
+                                    <input type="text" class="form-control" id="inputAddress"
+                                        placeholder="Ingrese Nombre" required>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputAddress2">Apellido</label>
+                                    <input type="text" class="form-control" id="inputAddress2"
+                                        placeholder="Ingrese Apellido">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4"
+                                        placeholder="name@example.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row contenedorCompleto">
+                                <div class="form-group col-md-4">
+                                    <label for="inputCity">Número Contacto</label>
+                                    <input type="text" class="form-control" id="inputCity" required>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputState">Ciudad</label>
+                                    <select id="inputState" type="text" class="form-control">
+                                        <option selected>Bogotá D.C</option>
+                                        <option>Medellín</option>
+                                        <option>Calí</option>
+                                        <option>Barranquilla</option>
+                                        <option>Cartagena</option>
+                                        <option>Bucaramanga</option>
+                                        <option>Manizales</option>
+                                        <option>Pereira</option>
+                                        <option>Cúcuta</option>
+                                        <option>Ibagué</option>
+                                        <option>Valledupar</option>
+                                        <option>Boyáca</option>
+                                        <option>Pasto</option>
+                                        <option>Armenia</option>
+                                        <option>Villavicencio</option>
+                                        <option>Neiva</option>
+                                        <option>Soacha</option>
+                                        <option>Soledad</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row contenedorCompleto">
+                                <div class="form-group col-md-4">
+                                    <label for="inputEmail4">Introduce Contraseña</label>
+                                    <input type="password" class="form-control" id="password"
+                                        placeholder="Nueva Contraseña" required>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputEmail4">Confirmar Contraseña</label>
+                                    <input type="password" class="form-control" id="inputEmail4" required>
+                                </div>
+                            </div>
+                            <!-- <div class="form-group contenedorCompleto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                                    <label class="form-check-label" for="gridCheck">
+                                        Acepto Término y condiciones
+                                    </label>
+                                </div>
+                            </div><br> -->
+                            <div class="contenedorCompleto">
+                                <button type="submit" class="btn colorBoton mt-3 o"> <a href="../inicioEmpresa/inicio.html"
+                                        style="text-decoration: none; color: white;"> Registrate</a> </button>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- <section class="sec-flex info">
+        <div>  
+            <div class="card bg-dark text-white">
+                 <img src="./Imagenes/REGISTRO.jpeg" alt="REGISTRO" width="690" height="700">
+
+                <div class="card-img-overlay">
+                    <img src="./Imagenes/LOGO-OSCURO.png" alt="proyecto" width="190" height="90">
+                  <h1>¡Sí, Ya estas Registrado!</h1>
+                  <h5 class="card-text">Pública las ofertas de Desarrollo</h5>
+                  <button type="submit" class="p-3 mb-2 bg-transparent text-light">Iniciar Sesión</button> 
+                </div>
+              </div>
+        </div>
+        <div>
+        <form>
+            <h2>Regístrate Como Empresa</h2><br>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputAddress">Nombre</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese Nombre" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputAddress2">Apellido</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Ingrese Apellido">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="name@example.com" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputCity">Número Contacto</label>
+                    <input type="text" class="form-control" id="inputCity" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">Ciudad</label>
+                    <select id="inputState" type="text" class="form-control">
+                        <option selected>Bogotá D.C</option>
+                        <option>Medellín</option>
+                        <option>Calí</option>
+                        <option>Barranquilla</option>
+                        <option>Cartagena</option>
+                        <option>Bucaramanga</option>
+                        <option>Manizales</option>
+                        <option>Pereira</option>
+                        <option>Cúcuta</option>
+                        <option>Ibagué</option>
+                        <option>Valledupar</option>
+                        <option>Boyáca</option>
+                        <option>Pasto</option>
+                        <option>Armenia</option>
+                        <option>Villavicencio</option>
+                        <option>Neiva</option>
+                        <option>Soacha</option>
+                        <option>Soledad</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputEmail4">Introduce Contraseña</label>
+                <input type="password" class="form-control" id="password" placeholder="Nueva Contraseña"required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputEmail4">Repita Contraseña</label>
+                <input type="password" class="form-control" id="inputEmail4"  required>
+            </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Acepto Término y condiciones
+                    </label>
+                </div>
+            </div><br>
+           
+            <center><button type="button" class="btn btn-danger btn-lg btn-block">Registrarme</center><br><br>
+        </form>
+        <a href="#"><span class="material-icons">exit_to_app</span> <br>
+        </button>
+
+        </div>
+    </section> -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/437f265f51.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

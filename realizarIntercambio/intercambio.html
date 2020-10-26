@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="icon" href="./imagenes/blancosoloto.png">
+    <link rel="stylesheet" href="css/intercambio.css">
+
+    <title>Zloty</title>
+
+</head>
+
+<body>
+
+    <header>
+        <!----------- menu principal --------- -->
+
+        <nav id="menu" class="navbar navbar-expand-lg bg-pink">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../imagenes/bigblanco.png" alt="" width="130px">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link letracolor " href="../onePageMorse/inicio.html">Donaciones</a>
+                        </li>
+
+
+                        <select class="form-control submenucategoria">
+                            <option class="bgOption" selected>Categoria</option>
+                            <option class="bgOption">Ectrodomesticos</option>
+                            <option class="bgOption">Jugueteria</option>
+                            <option class="bgOption">Accesorios para bebe</option>
+                            <option class="bgOption">Cosas del hogar</option>
+
+                        </select>
+                        <li class="nav-item correrUsers">
+                            <a class="nav-link letracolor " href="../inicioSesion.html"><i class="fas fa-bell"></i></a>
+
+                        </li>
+                        <li class="nav-item correrUsers">
+                            <a class="nav-link letracolor " href="../inicioSesion.html"><i class="fas fa-plus"></i></a>
+                        </li>
+                        <li class="nav-item correrUser">
+                            <a class="nav-link letracolor " href="../inicioSesion.html"><i
+                                    class="fas fa-user-circle"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- grid -->
+        <div class="container margenSuperioContenido">
+            <div class="row">
+                <div class="col">
+                    <h3>Patines</h3>
+                    <p>Cuentan con una bota baja: esto le permite al patinador mayor precisión y libertad para utilizar
+                        al máximo el movimiento del tobillo y una mayor cantidad de músculos.
+                        Utilizan ruedas como mínimo de 100mm. Esto literalmente le saca el jugo a los rodamientos, pues
+                        se recorre una mayor distancia con el mismo esfuerzo que utiliza un patinador recreativo, de
+                        freestyle, o agresivo.
+                    </p>
+                    <select class="form-control divEstado">
+                        <option class="bgOption" selected>Estado..</option>
+                        <option class="bgOption">Nuevo</option>
+                        <option class="bgOption">Casi Nuevo</option>
+                        <option class="bgOption">Gastado</option>
+
+
+                    </select>
+                </div>
+                <div class="col"><img src="../imagenes/patines.jpg" alt="" width="70%" height="200px"
+                        style="float: right; border-radius: 5%;"></div>
+                <div class="w-100"></div>
+                <div class="col groups"><img src="../imagenes/mac.jpg" alt="" width="70%" height="200px"
+                        style="border-radius: 5%;">
+                    <form>
+                        <div class="form-group groups">
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <div class="groups">
+                        <div class="fleccontenedor">
+                            <h3 style="margin-right: 10%;">Mac </h3><i class="fas fa-edit"></i>
+                        </div>
+
+                        <p>Cuentan con una bota baja: esto le permite al patinador mayor precisión y libertad para
+                            utilizar
+                            al máximo el movimiento del tobillo y una mayor cantidad de músculos.
+                            Utilizan ruedas como mínimo de 100mm. Esto literalmente le saca el jugo a los
+                            rodamientos, pues
+                            se recorre una mayor distancia con el mismo esfuerzo que utiliza un patinador
+                            recreativo, de
+                            freestyle, o agresivo.
+                        </p><i class="fas fa-edit"></i>
+
+                    </div>
+                    <select class="form-control divEstado">
+                        <option class="bgOption" selected>Estado..</option>
+                        <option class="bgOption">Nuevo</option>
+                        <option class="bgOption">Casi Nuevo</option>
+                        <option class="bgOption">Gastado</option>
+                    </select>
+                    <div class="BotoneContent">
+                        <button type="submit" class="btn colorBoton mt-3"> <a href="./inicio/inicioCoddy.html"
+                                style="text-decoration: none; color:white;">Enviar</a></button>
+                        <button type="submit" class="btn colorBoton mt-3"> <a href="./inicio/inicioCoddy.html"
+                                style="text-decoration: none; color:white; ">Cancelar</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!------- js de bootstrap------------------- -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+        <!---- js de iconos---------------- -->
+        <script src="https://kit.fontawesome.com/437f265f51.js" crossorigin="anonymous"></script>
+
+
+        <script>
+            $(window).scroll(function () {
+                if ($("#menu").offset().top > 190) {
+                    $("#menu").addClass("main");
+                } else {
+                    $("#menu").removeClass("main");
+                }
+            });
+        </script>
+</body>
+
+</html>

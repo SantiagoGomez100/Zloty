@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/principal.css">
+  <title>Coody Expert </title>
+</head>
+
+<body>
+  <!--header y Nav-->
+  <!-- <header id="cabecera">
+    <div id="portada"><img src="./Imagenes/Logo.png" style="width: 10%; height: auto;"></div>
+  </header> -->
+  <nav id="menu" class="navbar navbar-expand-lg fixed-top bg-pink">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./imagenes/LOGO-OSCURO.png" alt="" width="130px">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link letracolor " href="../onePageMorse/inicio.html">¿Quienes Somos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link letracolor" href="">Contactanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link letracolor " href="../inicioSesion.html">Iniciar Sesión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link letracolor btn btn-primary" href="../Registrar_Usuario/registrarUsuario.html">Registrarte!</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">{oody Expert</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Iniciar Sesión</a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" href="#">Registrarte!</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contactanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">¿Quienes Somos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ofertas</a>
+          </li>
+
+        </ul>
+        <span class="navbar-text"><span class="material-icons"> exit_to_app</span></span>
+      </div>
+    </nav><br><br> -->
+  <!--carousel-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item height-carousel active">
+        <img src="./imagenes/fondo3.jpg" class="d-block w-100" alt="cod">
+        <div class="carousel-caption d-none d-md-block ">
+          <div class="texto-encima">
+            <h5 class="letras-slaide"><b>Programa tu trabajo ideal</b></h5>
+            <p class="letras-slaide-p">Aqui encontraras los mejores talentos en desarrolla web</p>
+            <a class="btn btn-primarys btn-lg" href="../Registrar_Usuario/registrarUsuario.html" role="button"> ¡Postulate! </a>
+          </div>
+
+        </div>
+      </div>
+      <div class="carousel-item height-carousel">
+        <img src="./imagenes/adrifondo.jpg" class="d-block w-100" alt="off">
+        <div class="carousel-caption d-none d-md-block ">
+          <div class="texto-encima">
+            <h5 class="letras-slaide"> <b>Programa tu trabajo ideal</b> </h5>
+            <p class="letras-slaide-p">Aqui encontraras los mejores talentos en desarrolla web</p>
+            <a class="btn btn-primarys btn-lg" href="../Registrar_Usuario/registrarUsuario.html" role="button"> ¡Postulate! </a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item height-carousel">
+        <img src="./imagenes/fondo.jpg" class="d-block w-100" alt="prog">
+        <div class="carousel-caption d-none d-md-block ">
+          <div class="texto-encima">
+            <h5 class="letras-slaide"> <b>Programa tu trabajo ideal</b> </h5>
+            <p class="letras-slaide-p">Aqui encontraras los mejores talentos en desarrolla web</p>
+            <a class="btn btn-primarys btn-lg" href="../Registrar_Usuario/registrarUsuario.html" role="button"> ¡Postulate! </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--Imagen con Ondulación-->
+    <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        style="height: 100%; width: 100%;">
+        <path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: #ffffff;"></path>
+      </svg></div>
+  </div>
+
+
+
+  <!--Cards-->
+
+
+
+  </div>
+  <main>
+    <section class="portafolio">
+        <div class="contenedor">
+            <h2 class="titulo">Portafolio</h2>
+            <div class="galeria-port">
+
+                <div class="imagen-port">
+                    <img src="./imagenes/cicla.jpg" alt="">
+                    <div class="hover-galeria" data-toggle="modal" data-target=".bd-example-modal-lg">
+                        <p class="parrafodeimg">Bicicleta</p>
+                    </div>
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-header">
+                                <h5 class="modal-title" style="color: #ffffff; text-align: center;">Realiza tu
+                                    intercambio </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label=>
+                                    <span aria-hidden="true" style="color: #ffffff;">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-content">
+                                <div class="row" style="padding: 7%;">
+                                    <div class="col-md-6"><img style="margin-top: 40px;" src="./imagenes/cicla.jpg"
+                                            alt=""></div>
+                                    <div class="col-md-6 ml-auto">
+                                        <h3>Bicicleta </h3>
+                                        <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+                                        <p><b>El marco</b>El marco de las bicicletas todoterreno es más grande y
+                                            ancho que el de una convencional.
+                                            <b>Ruedas</b>Son tres las ruedas, por tamaño, la de la bicicleta de
+                                            montaña. Las de 26 pulgadas son las convencionales, las elegidas cuando
+                                            apenas se comienza a rodar; son para usar con moderación.
+
+                                        </p>
+                                        </div>
+                                            <!-- <button type="submit" class="btn colorBoton mt-3">Intercambiar</button> -->
+                                            <button type="button" class="btn colorBoton " data-container="body"
+                                                data-toggle="popover" data-placement="bottom" data-content="Aun no has iniciado sesion!>">
+                                                Intercambiar
+                                            </button>
+                                            
+                                        
+                                    </div>
+                                    <a href="./inicioSesion/inicioSesion.html">inicia sesion Aquí</a>
+                                </div>
+
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="imagen-port">
+                    <img src="./imagenes/patines.jpg" alt="">
+                    <div class="hover-galeria" data-toggle="modal" data-target=".bd-example-modal-lg">
+                        <p class="parrafodeimg">Patines</p>
+                    </div>
+                    
+                </div>
+                <div class="imagen-port">
+                    <img src="./imagenes/mac.jpg" alt="">
+                    <div class="hover-galeria" data-toggle="modal" data-target=".bd-example-modal-lg">
+                        <p>Computadora Mac</p>
+                    </div>
+                </div>
+                
+
+                <div class="imagen-port">
+                    <img src="./imagenes/escritorio.jpg" alt="">
+                    <div class="hover-galeria">
+                        <p>Escritorio computador</p>
+                    </div>
+                </div>
+
+
+
+                <div class="imagen-port">
+                    <img src="./imagenes/equipo.jpg" alt="">
+                    <div class="hover-galeria">
+                        <p>Equipo de sonido</p>
+                    </div>
+                </div>
+
+                <div class="imagen-port">
+                    <img src="./imagenes/perrohouse.jpg" alt="">
+                    <div class="hover-galeria">
+                        <p>Casa para mascota</p>
+                    </div>
+                </div>
+
+                <div class="imagen-port">
+                    <img src="./imagenes/puerta.jpg" alt="">
+                    <div class="hover-galeria">
+                        <p>Puerta de madera</p>
+                    </div>
+                </div>
+
+                <div class="imagen-port">
+                    <img src="./imagenes/cajon.jpg" alt="">
+                    <div class="hover-galeria">
+                        <p>Closet</p>
+                    </div>
+                </div>
+
+                <div class="imagen-port">
+                    <img src="./imagenes/pantalla windos.jpg" alt="">
+                    <div class="hover-galeria">
+                        <p>Pantalla LG</p>
+                    </div>
+                </div>
+
+                <div class="imagen-port">
+                    <img src="./imagenes/mueble.jpg" alt="">
+                    <div class="hover-galeria">
+                        <p>Sofa</p>
+                    </div>
+                </div>
+
+                <div class="imagen-port">
+                    <img src="./imagenes/tablero.png" alt="">
+                    <div class="hover-galeria">
+                        <p>Tablero</p>
+                    </div>
+                </div>
+
+                <div class="imagen-port">
+                    <img src="./imagenes/Classical_Guitar_two_views.jpg" alt="">
+                    <div class="hover-galeria">
+                        <p>Guitarra</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-------------- footer------------ -->
+
+<footer class="content-footer">
+
+    <img src="./imagenes/logoBellaFlor.png" alt="" width="150px" height="130px">
+    <h2 class="titulo-final">&copy; Fundación Bella Flor | Grup-Zloty</h2>
+    <img src="./imagenes/bigblanco.png" alt="" width="150px" height="130px">
+</footer>
+<!------- js de bootstrap------------------- -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+</script>
+<!---- js de iconos---------------- -->
+<script src="https://kit.fontawesome.com/437f265f51.js" crossorigin="anonymous"></script>
+
+
+<script>
+    $(window).scroll(function () {
+        if ($("#menu").offset().top > 190) {
+            $("#menu").addClass("main");
+        } else {
+            $("#menu").removeClass("main");
+        }
+    });
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+/* 
+.sec-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.sec-flex, .info {
+    flex-wrap: wrap;
+}
+h1 {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Assistant', sans-serif;
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    left: 10%;
+}
+h2 {
+    font-family: 'Assistant', sans-serif;
+}
+h5 {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Abel', sans-serif;
+    font-size: 30px;
+}
+
+.bg-transparent {
+    border:2px #39ACA6 solid;
+    font-family: 'Assistant', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    position: absolute;
+    top: 65%;
+    right: 15%;
+    left: 35%;
+}
+
+
+.card-text {
+    position: absolute;
+    top: 45%;
+    right: 20%;
+    left: 20%;
+    font-size: 25px;
+}
+.form-control {
+    border:2px rgb(131, 122, 122) solid;
+}
+.btn-danger {
+    background-color: #39ACA6;
+    border: 2px #39ACA6 solid;
+
+    color: white;
+}
+.material-icons, .ntb {
+    position: absolute;
+    right: 10%;
+    left: 90%;
+} */
+
+/* modificaciongeral */
+.imagen {
+    height: 620px;
+    background-position:right;
+    background-size: cover;
+    background: linear-gradient(to right, #191b1bd9, #1d1d1aa8), url(../../imagenes/adrifondo.jpg);
+    position: relative;
+
+}
+
+.containerprincipal {
+    padding: 0px !important;
+    margin-left: 0px !important;
+}
+
+.row {
+    margin-right: 0px !important;
+    padding-right: 0px !important;
+}
+
+.inputPeque {
+    width: 100%;
+}
+
+.divBoton {
+    display: flex;
+
+}
+
+.formulario {
+    width: 83%;
+}
+
+.contenedorCompleto {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    /* margin-left: 1%; */
+
+}
+
+.olvidoContrase {
+    font-size: 18px;
+    color: #ec7607f6;
+    font-weight: lighter;
+    text-decoration: none;
+    margin: 5% 18% 0% 5px;
+}
+
+/* .olvidoContrase:hover{
+    font-size: 18px;
+    margin:5% 18% 0px 5px;
+    color: #ec7607f6;
+    font-weight: lighter;
+    text-decoration: none;
+    
+} */
+.fa-arrow-left {
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.217);
+    font-weight: lighter;
+}
+
+.fa-arrow-left:hover {
+    font-size: 32px;
+    color: #ec7607f6;
+}
+
+.colorBoton {
+    background-color: #ec7607f6;
+    color: aliceblue;
+    width: 50%;
+    font-size: 18px;
+
+}
+
+.colorBoton:hover {
+    background-color: #ec7607f6;
+    color: aliceblue;
+    width: 50%;
+}
+
+.caption {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+
+.letraImagen {
+
+    color: aliceblue;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+
+}
+
+.textoicon {
+    width: 80%;
+    margin: 5% auto auto 10%;
+
+}
+
+.textLadoIcon {
+    display: flex;
+    width: 100%;
+    color: white;
+    margin-top: 20px;
+
+}
+
+.mensajeparrafo {
+    margin-left: 9%;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.fa-check-circle {
+    color: rgba(255, 255, 255, 0.591);
+    font-size: 25px;
+    margin-top: 10px;
+
+
+}
+
+.colorRegistro {
+    margin-left: 30%;
+    border: 2px solid #ec7607f6;
+    color: aliceblue;
+    width: 35%;
+    font-size: 18px;
+}
+
+.colorRegistro:hover {
+    margin-left: 30%;
+    background-color: #ec7607f6;
+    color: aliceblue;
+    width: 35%;
+    font-size: 18px;
+}
+
+.colorRegistro {
+    margin-left: 30%;
+    border: 2px solid #ec7607f6;
+    color: aliceblue;
+    width: 35%;
+    font-size: 18px;
+}
+
+.colorRegistro:hover {
+    margin-left: 30%;
+    background-color: #ec7607f6;
+    color: aliceblue;
+    width: 35%;
+    font-size: 18px;
+}
