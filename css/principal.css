@@ -11,7 +11,7 @@
 
 .contenedor{
     padding: 60px 0;
-    width: 90%;
+    width:89%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
@@ -30,7 +30,7 @@ header{
     background: linear-gradient(to right, #b05206ee, #b05206ee, #ec7607f6),url(imagenes/fondo3.jpg);
     background: linear-gradient(to right, #925726ee, #ac662dee, #ec7607f6),url(imagenes/fondo.jpg); 
     background: linear-gradient(to right, #0c0c0c, #0f0c29e5, #fdc630a1),url(imagenes/adrifondo.jpg);  
-    background: linear-gradient(to right, #c57411e3, #795435f3, #644a2c76),url(imagenes/fondo.jpg);  
+    background: linear-gradient(to right, #c57411e3, #bb7c49f3, #8f5f298a),url(imagenes/fondo.jpg);  
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -86,7 +86,7 @@ header{
 }
 .bienvenida{
     list-style: none;
-    padding-left: 10px;
+    padding-left: 8px;
     animation:cambiar 30s infinite;
 }
 .parrafodeclase .bienvenida{
