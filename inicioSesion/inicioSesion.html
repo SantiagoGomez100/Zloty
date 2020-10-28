@@ -8,15 +8,11 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./css/inicioSesion.css">
+    <link rel="stylesheet" type="text/css" href="./css/sesionDiseno.css">
     <title>inicio Sesión</title>
 </head>
 
 <body>
-
-
-
-
-
 
 
     <div class="container containerprincipal">
@@ -31,27 +27,34 @@
                         Sesión</h2>
                 </section>
 
-                <form>
-                    <div class="form-group mt-4">
-                        <label for="Email">Email</label>
-                        <input type="email" class="form-control inputPeque" id="correo" placeholder="Correo" required>
-                    </div>
-                    <div class="form-group mt-3">
-                        <label for="password">Contraseña</label>
-                        <input type="password" class="form-control inputPeque" id="contra" placeholder="Contraseña" required>
-                    </div>
-                    <div class="divBoton">
-                        <input type="button" onclick="validarInicio()" value="Inicio Sesión">
-                        <button type="submit" class="btn colorBoton mt-3">
-                            <a href="../inicioLogueado/inicio.html"style="text-decoration: none; color:white">Inicio Sesión</a></button>
-                            
+                <div class="login-content">
+                    <form action="index.html">
+                           <div class="input-div one">
+                              <div class="i">
+                                      <i class="fas fa-user"></i>
+                              </div>
+                              <div class="div">
+                                      <h5>Email</h5>
+                                      <input type="text" class="input">
+                              </div>
+                           </div>
+                           <div class="input-div pass">
+                              <div class="i"> 
+                                   <i class="fas fa-lock"></i>
+                              </div>
+                              <div class="div">
+                                   <h5>Contraseña</h5>
+                                   <input type="password" class="input" required>
+                           </div>
+                        </div>
+                        <input type="submit" class="btn" value="Ingresar">
                         <i class="fas fa-key"></i>
                         <a href="../olvidarContreseña/olvidarContraseña.html" class="olvidoContrase">olvidaste tu clave</a>
                     </div>
                     <a href="../inicio.html"><i class="fas fa-arrow-left mt-4"></i></a>
                 </form>
-
             </div>
+
             <div class="col-lg-6 imagen">
                 <div class="caption ">
                     <section>
@@ -80,15 +83,7 @@
             </div>
         </div>
     </div>
-
-
     </div>
-
-
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -102,6 +97,7 @@
     <script src="https://kit.fontawesome.com/437f265f51.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="./js/iniciarSesion.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
 
 </body>
 

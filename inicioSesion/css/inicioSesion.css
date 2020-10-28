@@ -7,6 +7,7 @@
     position: relative;
 
 }
+
 .containerprincipal{
     padding:0px !important;
     margin-right: 0px !important;
@@ -15,16 +16,19 @@
 .inputPeque {
     width: 80%;
 }
+
 .divBoton{
     display: flex;
 
 }
+
 .fa-key{
     color: #ec7607f6;
     font-size: 20px;
     margin-left: 20%;
     margin-top: 5%;
 }
+
 .olvidoContrase{
     font-size: 15px;
     margin-left: 5px;
@@ -34,6 +38,7 @@
     text-decoration: none;
 
 }
+
 .olvidoContrase:hover{
     font-size: 15px;
     margin-left: 5px;
@@ -43,11 +48,13 @@
     text-decoration: none;
     
 }
+
 .fa-arrow-left{
     font-size: 32px;
     color: rgba(0, 0, 0, 0.551);
     margin-left: -95px;
 }
+
 .fa-arrow-left:hover{
     font-size: 32px;
     color:#ec7607f6;
