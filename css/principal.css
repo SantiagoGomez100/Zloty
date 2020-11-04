@@ -169,7 +169,7 @@ text-align: center;
     height: 100%;
     top:0;
     transform: scale(0);
-    background-color: rgba(255, 166, 0, 0.653);
+    background-color: rgba(255, 81, 0, 0.719);
     transition: transform .5;
     display: flex;
     justify-content: center;
