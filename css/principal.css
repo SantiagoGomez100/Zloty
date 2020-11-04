@@ -169,7 +169,7 @@ text-align: center;
     height: 100%;
     top:0;
     transform: scale(0);
-    background-color: rgba(255, 166, 0, 0.653);
+    background-color: rgba(255, 81, 0, 0.719);
     transition: transform .5;
     display: flex;
     justify-content: center;
@@ -194,7 +194,7 @@ text-align: center;
 /* footer */
 
 footer{
-    background-color: #303236;
+    background-color: #232528;
     padding: 60px 0 30px 0;
     margin: auto;
     overflow: hidden;
@@ -240,7 +240,7 @@ color: white;
 }
 
 .main {
-    background-color: #d8670bd9;
+    background-color: #232528;
     color: #ffffff;
 }
 
