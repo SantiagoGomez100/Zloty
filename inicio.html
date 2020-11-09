@@ -34,32 +34,28 @@
                 <ul class="nav nav-pills nav-fill">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
                     <ul class="navbar-nav ml-auto">
-                          <li class="nav-item">
+                        <li class="nav-item dropdown">
                             <div class="i">
-                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user-friends"></i>
                             </div>
+                            <a class="nav-link btn btn-link" href="#" style="color: #ffffff;">
+                                Conocenos</a>
+                        </li>
+                          <li class="nav-item">
+                                <div class="i">
+                                    <i class="fas fa-user"></i>
+                                </div>
                             <a class="nav-link btn btn-link" href="inicioSesion/inicioSesion.html" style="color: #ffffff;">
                                 Iniciar Sesión</a>
                           </li>
                           <li class="nav-item">
-                            <div class="i">
-                                <i class="fas fa-registered"></i>
-                            </div>
+                                <div class="i">
+                                    <i class="fas fa-registered"></i>
+                                </div>
                             <a class="nav-link btn btn-link" href="registroUsuario/registrarEmpresa.html" style="color: #ffffff;">
                                 Registrarse</a>
                           </li>
-
-                        <li class="nav-item dropdown">
-                            <div class="i">
-                                <i class="fas fa-thumbtack"></i>
-                            </div>
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" 
-                            aria-haspopup="true" aria-expanded="false" style="color: #ffffff;">Categoria Donaciones</a>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#"><font color="#ffffff">Electrodomesticos</font></a>
-                              <a class="dropdown-item" href="#"><font color="#ffffff">Jugueteria</font></a>
-                              <a class="dropdown-item" href="#"><font color="#ffffff">Accesorios para bebe</font></a>
-                              <a class="dropdown-item" href="#"><font color="#ffffff">Cosas del hogar</font></a>
+                            
                             </div>
                         </li>
                     </ul>
@@ -84,20 +80,24 @@
         </div>
 
 
-        <!-------- letra de bienvenida ------------ -->
+    <!-------- Cuadro que Acompaña el Carrusel ------------ -->
 
-        <section>
-            <div class="contenedorletras">
-                <p class="parrafodeclase">
-                    Unete a Zloty para que sea 
-                    <ul class="bienvenida">
-                        <li class="fraseCambiante">Fácil </li>
-                        <li class="fraseCambiante">Rapido</li>
-                        <li class="fraseCambiante">Eficiente</li>
+        <div class="contenedorletras">
+            <h1>Unete a Zloty para que sea mas Eficiente</h1>
+            <h6>Puedes clasificar tus productos para una mayor busqueda a lo que tu necesites.</h6>
+            <ul class="contenedorprincipal"><br>
+            <li class="principal">
+                <a class="colorprincipal" href="#"><i class="fas fa-thumbtack">    Categorias de las Donaciones</i></a>
+                <div class="submenu">
+                    <ul class="primerocategoria">
+                    <li class="segundocategoria"><a class="tercerocategoria" href="#">Electrodomesticos</a></li>
+                    <li class="segundocategoria"><a class="tercerocategoria" href="#">Jugueteria</a></li>
+                    <li class="segundocategoria"><a class="tercerocategoria" href="#">Accesorios para bebe</a></li>
+                    <li class="segundocategoria"><a class="tercerocategoria" href="#">Implementos para el Hogar</a></li>
                     </ul>
-                </p>
-            </div>
-        </section>
+                </div>
+            </ul>
+        </div>
 
         
 
@@ -114,11 +114,13 @@
 
 
     <div class= "container">
-        
-        </div>
-            <section>
-
-            </section>
+            <article class="cuadro">
+                <img src="imagenes/mensajero.png" class="imagencuadro" alt="Equipo Zloty">
+                <h3 class="titulocuadro">Zloty</h3>
+                <p class="frasecuadro">Nuestro equipo cumpliendo con todas las espectativas de la Fundación Bella Flor, dando nuestra mejor
+                    calidad y eficiencia a todo lo que se nos a sea aignado, tambien ayudando facilidades al cliente en todo lo que sea posible.
+                </p>
+            </article>
         <br>
 
         <center><img src="imagenes/titulo2.png" alt="Equipo Zloty"></center>
@@ -318,13 +320,28 @@
         </section>
     </main>
 
+    <!-- Redes Sociales de la Fundacion -->
+
+    <div class="container">
+
+        <article class="cuadrofundacion">
+                <p class="fundacion">Si desea donar su grano de arena a la Fundación aqui tiene sus Redes Sociales</p>
+                <a class="iconos" href="https://www.facebook.com/fundacionbellaflor"><i class="fab fa-facebook"></i></a>
+                <a class="iconos" href="https://twitter.com/bellaflortw"><i class="fab fa-twitter"></i></a>
+                <a class="iconos" href="https://www.instagram.com/fundacion_bella_flor/"><i class="fab fa-instagram"></i></a>
+        </article>
+        <br><br>
+    </div>
+
     <!-------------- footer------------ -->
 
     <footer class="content-footer">
 
-        <img src="./imagenes/logoBellaFlor.png" alt="" width="160px" height="100px">
+        <a href="https://www.facebook.com/fundacionbellaflor">
+            <img src="./imagenes/logoBellaFlor.png" alt="" width="190px" height="100px">
+        </a>
         <h2 class="titulo-final">&copy; Fundación Bella Flor | Grup-Zloty</h2>
-        <img src="./imagenes/bigblanco.png" alt="" width="130px" height="100px">
+        <img src="./imagenes/bigblanco.png" alt="" width="180px" height="100px">
     </footer>
 
     <!------- js de bootstrap------------------- -->
