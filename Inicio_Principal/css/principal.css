@@ -36,6 +36,37 @@ header{
     position: relative;
 }
 
+.cuadro{
+
+    margin: auto;
+    padding: 0px;
+    border: 3px solid black;
+    padding-left: 100px 40px;
+    background: #27292D;
+    width: 1000px;
+    border-radius: 10px, 20pc, 15px, 15px;
+    box-shadow: 3px 7px 3px 7px rgb(1, 3, 14);
+
+  }
+
+.imagencuadro{
+
+    float: right;
+    width: 350px;
+    height: 300px;
+}
+
+.titulocuadro{
+    padding: 35px;
+    color: orangered;
+}
+
+.frasecuadro{
+    padding: 33px;
+    color: orangered;
+    text-align: justify;
+}
+
 
 .separacionnav{
     text-decoration: none;
@@ -67,38 +98,111 @@ header{
     width: 100%;
 }
 .contenedorletras{
-    display: flex;
     width: 70%;
-    height: 71px;
-    color: white;
-    font-size: 65px;
-    line-height: 70px;
-   
-   position: absolute;
+    height: 250px;
+    color: rgb(255, 255, 255);
+    
+    position: absolute;
     top: 0;
-    right: 0px;
     bottom: 0px;
-    left: 0;
+    left: 260px;
     margin: auto;
 
-    overflow: hidden;
+    text-align: center;
 }
-.bienvenida{
-    list-style: none;
-    padding-left: 8px;
-    animation:cambiar 30s infinite;
+
+.contenedorprincipal{
+
+    list-style:none;
+    padding:0;
+    margin:auto;
+    overflow:hidden;
+
 }
-.parrafodeclase .bienvenida{
-    margin-top: 0;
+
+.primerocategoria{
+
+    list-style:none;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+
 }
+
+.segundocategoria{
+
+    float:left;
+
+}
+
+.tercerocategoria{
+
+    color:#ffffff;
+    display:block;
+    padding:10px 20px;
+
+}
+
+.colorprincipal{
+    color: #f1f1f1;
+    
+}
+
+.colorprincipal:hover{
+    color: rgba(255, 81, 0, 0.719);
+}
+
+.principal:hover .submenu{
+
+    display: table;
+
+}
+
+
+/* Submenu de Donaciones */
+
+.submenu{
+
+    margin: auto;
+    width:200px;
+    height: 10px;
+    position:relative;
+    left: 0;
+    background:#27292D;
+    box-sizing: content-box;
+    display:none;
+    padding: 10px -50px;
+
+}
+
+.submenu .primerocategoria{
+
+    width:20px;
+    display:table-cell;
+    box-sizing:border-box;
+
+}
+
+.submenu .primerocategoria:last-child{
+
+    border:none;
+
+}
+
+.tercerocategoria:hover{
+    color:#e45b0d;
+    text-decoration: transparent;
+}
+
+
 
 @keyframes cambiar{
 
     0%{margin-top: 0px;}
     20%{margin-top:0px;}
 
-    25%{margin-top: -80px;}
-    40%{margin-top: -80px;}
+    25%{margin-top: -70px;}
+    40%{margin-top: -70px;}
 
     45%{margin-top: -140px;}
     80%{margin-top: -140px;}
@@ -113,13 +217,13 @@ header{
 
 
 header .textos-header{
-display: flex;
-height: 430px;
-width: 100%;
-margin-top: 5%;
-align-items: center;
-flex-direction: column;
-text-align: center;
+    display: flex;
+    height: 430px;
+    width: 100%;
+    margin-top: 5%;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 .textos-header h1{
     font-size: 50px;
@@ -183,12 +287,44 @@ text-align: center;
     margin-top: 170px;
 }
 .fa-exchange-alt{
-    font-size: 70px;
+    font-size:  70px;
     color: white;
 }
 .imagen-port:hover .hover-galeria{
     transform: scale(1);
     font-size: 20px;
+}
+
+
+/* Redes Sociales de la Fundacion */
+
+.cuadrofundacion{
+
+    border: 5px solid #e45b0d;
+    padding: 30px 30px;
+
+}
+
+.fundacion{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto;
+    color: #e45b0d;
+    text-align: center;
+
+}
+
+.iconos{
+
+    color: #e45b0d;
+    padding: 150px;
+
+}
+
+.iconos:hover{
+
+    color: #ac4408;
+
 }
 
 /* footer */
