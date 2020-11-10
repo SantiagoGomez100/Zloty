@@ -16,10 +16,10 @@
 </head>
 
 <body style="background-color:#27292D;">
-
+    
     <header>
 
-        <!----------- menu principal --------- -->
+    <!----------- menu principal --------- -->
 
         <nav id="menu" class="navbar navbar-expand-lg fixed-top bg-pink">
             <div class="container">
@@ -32,88 +32,76 @@
                     <i class="fas fa-bars"></i>
                 </button>
                 <ul class="nav nav-pills nav-fill">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <div class="i">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <a class="nav-link btn btn-link" href="#" style="color: #ffffff;">
+                                Conocenos</a>
+                        </li>
+                          <li class="nav-item">
                                 <div class="i">
                                     <i class="fas fa-user"></i>
                                 </div>
-                                <a class="nav-link btn btn-link" href="../inicioSesion/inicioSesion.html"
-                                    style="color: #ffffff;">
-                                    Iniciar Sesión</a>
-                            </li>
-                            <li class="nav-item">
+                            <a class="nav-link btn btn-link" href="inicioSesion/inicioSesion.html" style="color: #ffffff;">
+                                Iniciar Sesión</a>
+                          </li>
+                          <li class="nav-item">
                                 <div class="i">
                                     <i class="fas fa-registered"></i>
                                 </div>
-                                <a class="nav-link btn btn-link" href="../Registrate/registrarse.html"
-                                    style="color: #ffffff;">
-                                    Registrarse</a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <div class="i">
-                                    <i class="fas fa-thumbtack"></i>
-                                </div>
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                    aria-haspopup="true" aria-expanded="false" style="color: #ffffff;">Categoria
-                                    Donaciones</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">
-                                        <font color="#ffffff">Electrodomesticos</font>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <font color="#ffffff">Jugueteria</font>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <font color="#ffffff">Accesorios para bebe</font>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <font color="#ffffff">Cosas del hogar</font>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                            <a class="nav-link btn btn-link" href="../Registrate/registrarse.html" style="color: #ffffff;">
+                                Registrarse</a>
+                          </li>
+                            
+                            </div>
+                        </li>
+                    </ul>
+                </div>
                 </ul>
             </div>
         </nav>
 
-        <!-- carrusel -->
+
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item height-carousel active">
-                    <img src="imagenes/carrusel1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item height-carousel">
-                    <img src="imagenes/carrusel2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item height-carousel">
-                    <img src="imagenes/carrusel3.jpg" class="d-block w-100" alt="...">
-                </div>
+            <div class="carousel-item height-carousel active">
+                <img src="imagenes/carrusel1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item height-carousel">
+                <img src="imagenes/carrusel2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item height-carousel">
+                <img src="imagenes/carrusel3.jpg" class="d-block w-100" alt="...">
+            </div>
             </div>
         </div>
 
 
-        <!-------- letra de bienvenida ------------ -->
+    <!-------- Cuadro que Acompaña el Carrusel ------------ -->
 
-        <section>
-            <div class="contenedorletras">
-                <p class="parrafodeclase">
-                    <!-- Unete a Zloty para que sea -->
-                    Unete a Zloty 
-                    <ul class="bienvenida">
-                        <li class="fraseCambiante">Fácil </li>
-                        <li class="fraseCambiante">Rapido</li>
-                        <li class="fraseCambiante">Práctico</li>
+        <div class="contenedorletras">
+            <h1>Unete a Zloty para que sea mas Eficiente</h1>
+            <h6>Puedes clasificar tus productos para una mayor busqueda a lo que tu necesites.</h6>
+            <ul class="contenedorprincipal"><br>
+            <li class="principal">
+                <a class="colorprincipal" href="#"><i class="fas fa-thumbtack">    Categorias de las Donaciones</i></a>
+                <div class="submenu">
+                    <ul class="primerocategoria">
+                    <li class="segundocategoria"><a class="tercerocategoria" href="#">Electrodomesticos</a></li>
+                    <li class="segundocategoria"><a class="tercerocategoria" href="#">Jugueteria</a></li>
+                    <li class="segundocategoria"><a class="tercerocategoria" href="#">Accesorios para bebe</a></li>
+                    <li class="segundocategoria"><a class="tercerocategoria" href="#">Implementos para el Hogar</a></li>
                     </ul>
-                </p>
-            </div>
-        </section>
+                </div>
+            </ul>
+        </div>
 
+        
 
-
-        <!---------smoon ola  de la pagina  ----- -->
+    <!---------smoon ola  de la pagina  ----- -->
 
         <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 100%; width: 100%;">
@@ -125,16 +113,17 @@
     <!-- Tarjeta -->
 
 
-    <div class="container">
+    <div class= "container">
+            <article class="cuadro">
+                <img src="imagenes/mensajero.png" class="imagencuadro" alt="Equipo Zloty">
+                <h3 class="titulocuadro">Zloty</h3>
+                <p class="frasecuadro">Nuestro equipo cumpliendo con todas las espectativas de la Fundación Bella Flor, dando nuestra mejor
+                    calidad y eficiencia a todo lo que se nos a sea aignado, tambien ayudando facilidades al cliente en todo lo que sea posible.
+                </p>
+            </article>
+        <br>
 
-    </div>
-    <section>
-        <!-- <h1 class="tituloPortafolio">P O R T A F O L I O</h1> -->
-    </section>
-    <br>
-
-
-    <center><img src="imagenes/titulo2.png" alt="Equipo Zloty"></center>
+        <center><img src="imagenes/titulo2.png" alt="Equipo Zloty"></center>
     </div>
 
     <!--------- secccion del card ------------ -->
@@ -144,10 +133,11 @@
                 <div class="galeria-port">
                     <div class="imagen-port">
                         <img src="./imagenes/cicla.jpg" alt="">
-                        <div class="hover-galeria" data-toggle="modal" data-target=".cicla">
+                        <div class="hover-galeria" data-toggle="modal" data-target=".cicla-modal-lg">
+
                             <p class="parrafodeimg">Bicicleta</p>
                         </div>
-                        <div class="modal fade cicla" tabindex="-1" role="dialog"
+                        <div class="modal fade cicla-modal-lg" tabindex="-1" role="dialog"
                             aria-labelledby="myLargeModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-header">
@@ -160,8 +150,7 @@
                                 <div class="modal-content">
                                     <div class="row" style="padding: 7%;">
                                         <div class="col-md-6"><img style="margin-top: 40px;" src="./imagenes/cicla.jpg"
-                                                alt="">
-                                        </div>
+                                                alt=""></div>
                                         <div class="col-md-6 ml-auto">
                                             <h3>Bicicleta </h3>
                                             <div data-spy="scroll" data-target="#list-example" data-offset="0"
@@ -175,62 +164,7 @@
 
                                                 </p>
                                             </div>
-                                            <!-- <button type="submit" class="btn colorBoton mt-3">Intercambiar</button> -->
-                                            <button type="button" class="btn colorBoton " data-container="body"
-                                                data-toggle="popover" data-placement="bottom"
-                                                data-content="Aun no has iniciado sesion!>">
-                                                Intercambiar
-                                            </button>
-
-
-                                        </div>
-                                        <a href="../inicioSesion/inicioSesion.html">inicia sesion Aquí</a>
-                                    </div>
-
-                                </div>
-
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="imagen-port">
-                        <img src="./imagenes/patines.jpg" alt="">
-                        <div class="hover-galeria" data-toggle="modal fade" data-target=".patines">
-                            <p class="parrafodeimg">Patines</p>
-                            <div class="modal fade patines" tabindex="-1" role="dialog"
-                            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" style="color: #ffffff; text-align: center;">Realiza tu
-                                        intercambio </h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label=>
-                                        <span aria-hidden="true" style="color: #ffffff;">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-content">
-                                    <div class="row" style="padding: 7%;">
-                                        <div class="col-md-6"><img style="margin-top: 40px;" src="./imagenes/patines.jpg"
-                                                alt="">
-                                        </div>
-                                        <div class="col-md-6 ml-auto">
-                                            <h3>Bicicleta </h3>
-                                            <div data-spy="scroll" data-target="#list-example" data-offset="0"
-                                                class="scrollspy-example">
-                                                <p><b>El marco</b>El marco de las bicicletas todoterreno es más grande y
-                                                    ancho que el de una convencional.
-                                                    <b>Ruedas</b>Son tres las ruedas, por tamaño, la de la bicicleta de
-                                                    montaña. Las de 26 pulgadas son las convencionales, las elegidas
-                                                    cuando
-                                                    apenas se comienza a rodar; son para usar con moderación.
-
-                                                </p>
-                                            </div>
-                                            <!-- <button type="submit" class="btn colorBoton mt-3">Intercambiar</button> -->
+                                            <button type="submit" class="btn colorBoton mt-3">Intercambiar</button>
                                             <button type="button" class="btn colorBoton " data-container="body"
                                                 data-toggle="popover" data-placement="bottom"
                                                 data-content="Aun no has iniciado sesion!>">
@@ -250,6 +184,62 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+
+                    <div class="imagen-port">
+                        <img src="./imagenes/patines.jpg" alt="">
+                        <div class="hover-galeria" data-toggle="modal" data-target=".patines-modal-lg">
+                            <p class="parrafodeimg">Patines</p>
+                            <div class="modal fade patines-modal-lg" tabindex="-1" role="dialog"
+                                aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" style="color: #ffffff; text-align: center;">Realiza tu
+                                            intercambio </h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label=>
+                                            <span aria-hidden="true" style="color: #ffffff;">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-content">
+                                        <div class="row" style="padding: 7%;">
+                                            <div class="col-md-6"><img style="margin-top: 40px;"
+                                                    src="./imagenes/patines.jpg" alt=""></div>
+                                            <div class="col-md-6 ml-auto">
+                                                <h3>Patines</h3>
+                                                <div data-spy="scroll" data-target="#list-example" data-offset="0"
+                                                    class="scrollspy-example">
+                                                    <p><b>El marco</b>El marco de las bicicletas todoterreno es más
+                                                        grande y
+                                                        ancho que el de una convencional.
+                                                        <b>Ruedas</b>Son tres las ruedas, por tamaño, la de la bicicleta
+                                                        de
+                                                        montaña. Las de 26 pulgadas son las convencionales, las elegidas
+                                                        cuando
+                                                        apenas se comienza a rodar; son para usar con moderación.
+
+                                                    </p>
+                                                </div>
+                                                <button type="submit" class="btn colorBoton mt-3">Intercambiar</button>
+                                                <button type="button" class="btn colorBoton " data-container="body"
+                                                    data-toggle="popover" data-placement="bottom"
+                                                    data-content="Aun no has iniciado sesion!>">
+                                                    Intercambiar
+                                                </button>
+
+
+                                            </div>
+                                            <a href="./inicioSesion/inicioSesion.html">inicia sesion Aquí</a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -330,28 +320,43 @@
         </section>
     </main>
 
+    <!-- Redes Sociales de la Fundacion -->
+
+    <div class="container">
+
+        <article class="cuadrofundacion">
+                <p class="fundacion">Si desea donar su grano de arena a la Fundación aqui tiene sus Redes Sociales</p>
+                <a class="iconos" href="https://www.facebook.com/fundacionbellaflor"><i class="fab fa-facebook"></i></a>
+                <a class="iconos" href="https://twitter.com/bellaflortw"><i class="fab fa-twitter"></i></a>
+                <a class="iconos" href="https://www.instagram.com/fundacion_bella_flor/"><i class="fab fa-instagram"></i></a>
+        </article>
+        <br><br>
+    </div>
+
     <!-------------- footer------------ -->
 
     <footer class="content-footer">
 
-        <img src="./imagenes/logoBellaFlor.png" alt="" width="160px" height="100px">
+        <a href="https://www.facebook.com/fundacionbellaflor">
+            <img src="./imagenes/logoBellaFlor.png" alt="" width="190px" height="100px">
+        </a>
         <h2 class="titulo-final">&copy; Fundación Bella Flor | Grup-Zloty</h2>
-        <img src="./imagenes/bigblanco.png" alt="" width="130px" height="100px">
+        <img src="./imagenes/bigblanco.png" alt="" width="180px" height="100px">
     </footer>
 
     <!------- js de bootstrap------------------- -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
