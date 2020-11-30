@@ -441,3 +441,57 @@ footer {
   text-align: center;
   margin-top: 5%;
 }
+
+/**/
+
+.list-group{
+
+  margin: 5%;
+}
+
+.botongroup{
+
+  color: #e45b0d;
+  background-color: rgb(0, 0, 0);
+  padding: 1%;
+}
+
+.containerzonacliente{
+
+  margin: 1%;
+  margin-left: 20%;
+}
+
+#atencioncliente{
+
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #e45b0d;
+  border: 1px solid  #b3490c;
+}
+
+
+#colorboton{
+
+  background-color: #e45b0d;
+  border: 2px solid #8f3b0b;
+}
+
+.accordion{
+
+  margin: 1% auto;
+}
+
+.card{
+
+  background-color: #232528;
+  margin: 1% auto;
+}
+
+#colorletracollaje{
+
+  color: #ac4408;
+  text-decoration: none;
+}

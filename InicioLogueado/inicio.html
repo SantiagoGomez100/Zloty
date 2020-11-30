@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,12 +12,12 @@
     <link rel="icon" href="imagenes/LOGOsolito.png">
     <link rel="stylesheet" href="css/principal.css">
 
-    <title>Zloty - Principal</title>
+    <title>Zloty - Bienvenido Usuario</title>
 
 </head>
 
 <body style="background-color:#27292D;">
-    
+
     <header>
 
     <!----------- menu principal --------- -->
@@ -42,20 +42,27 @@
                             <a class="nav-link btn btn-link" href="#" style="color: #ffffff;">
                                 Conocenos</a>
                         </li>
-                        <li class="nav-item">
-                                <div class="i">
-                                    <i class="fas fa-user"></i>
-                                </div>
-                            <a class="nav-link btn btn-link" href="../inicioSesion/inicioSesion.html" style="color: #ffffff;">
-                                Iniciar Sesión</a>
+                        <li class="nav-item correrUsers">
+                            <div class="i">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <a class="nav-link letracolor " href="../notificaciones/notificaciones.html" style="color: #ffffff;">
+                                Notificaciones <span class="badge badge-light">0</span>
+                                <!-- <span class="sr-only">unread messages</span> --></a>
                         </li>
-                        <li class="nav-item">
-                                <div class="i">
-                                    <i class="fas fa-registered"></i>
-                                </div>
-                            <a class="nav-link btn btn-link" href="../Registrate/registrarse.html" style="color: #ffffff;">
-                                Registrarse</a>
+                        <li class="nav-item correrUsers">
+                            <div class="i">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <a class="nav-link letracolor " href="../subirUnProducto/subirProducto.html" style="color: #ffffff;">
+                                Añadir Producto</a>
                         </li>
+                        <li class="nav-item correrUser">
+                            <div class="i">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <a class="nav-link letracolor " href="../modificarPerfil/ModificarPerfil.html" style="color: #ffffff;">
+                                Usuario</a>
                             </div>
                         </li>
                     </ul>
@@ -79,12 +86,24 @@
             </div>
         </div>
 
-    <!-------- Cuadro que Acompaña el Carrusel -------------->
+
+    <!-------- Cuadro que Acompaña el Carrusel ------------ -->
 
         <div class="contenedorletras">
-            <h1>Unete a Zloty para que sea mas Eficiente</h1>
+            <h1>Con Zloty intercambia o dona Productos de manera Rapida</h1>
             <h6>Puedes clasificar tus productos para una mayor busqueda a lo que tu necesites.</h6>
-                <a class="colorprincipal" href="../inicioSesion/inicioSesion.html"><i class="fas fa-user-circle"></i>   Para Clasificar las Categorias debes Iniciar Sesión</a>
+            <ul class="contenedorprincipal"><br>
+            <li class="principal">
+                <a class="colorprincipal" href="#"><i class="fas fa-thumbtack">    Categorias del Portafolio de Donaciones</i></a>
+                <div class="submenu">
+                    <ul class="primerocategoria">
+                    <li class="segundocategoria"><a class="tercerocategoria" href="#">Electrodomesticos</a></li>
+                    <li class="segundocategoria"><a class="tercerocategoria" href="#">Jugueteria</a></li>
+                    <li class="segundocategoria"><a class="tercerocategoria" href="#">Accesorios para bebe</a></li>
+                    <li class="segundocategoria"><a class="tercerocategoria" href="#">Implementos para el Hogar</a></li>
+                    </ul>
+                </div>
+            </ul>
         </div>
 
     <!---------smoon ola  de la pagina  ----- -->
@@ -96,8 +115,50 @@
             </svg></div>
     </header>
 
-    <!-- Tarjeta -->
+            <!-- Zona de Atencion al Cliente -->
 
+            <div class="containerzonacliente">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"
+            id="atencioncliente">
+                Quejas</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat"
+            id="atencioncliente">
+                Reclamos</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap"
+            id="atencioncliente">
+                Sugerencias</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Enviar Mensaje a la Administración</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Mensaje:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar Ventana</button>
+                        <button type="button" class="btn btn-primary" id="colorboton">Enviar Mensaje</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+    <!-- Tarjeta -->
 
     <div class= "container">
             <article class="cuadro">
@@ -109,11 +170,56 @@
             </article>
         <br>
 
-        <nav class="navvideo">
-            <video controls="controls" width="90%" poster="../videos/miniatura.png">
-                <source src="../videos/videoprincipal.mp4" type="video/mp4" class="videoprincipal"></sourse>
-            </video>
-        </nav>
+    <!-- Seccion de Donaciones e Intercambio -->
+
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" id="colorletracollaje">
+                            Donaciones Realizadas
+                        </button>
+                </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    
+                </div>
+            </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="colorletracollaje">
+                            Donaciones Canceladas
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    
+                </div>
+            </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" id="colorletracollaje">
+                            Intercambios Realizados
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    
+                </div>
+            </div>
+            </div>
+        </div>
 
         <center><img src="imagenes/titulo2.png" alt="Equipo Zloty"></center>
     </div>
@@ -219,7 +325,6 @@
                                                     Intercambiar
                                                 </button>
 
-
                                             </div>
                                             <a href="./inicioSesion/inicioSesion.html">inicia sesion Aquí</a>
                                         </div>
@@ -242,15 +347,12 @@
                         </div>
                     </div>
 
-
                     <div class="imagen-port">
                         <img src="./imagenes/escritorio.jpg" alt="">
                         <div class="hover-galeria">
                             <p>Escritorio computador</p>
                         </div>
                     </div>
-
-
 
                     <div class="imagen-port">
                         <img src="./imagenes/equipo.jpg" alt="">
@@ -343,10 +445,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
             integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
         </script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
         </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
             integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
         </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
