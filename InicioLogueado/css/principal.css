@@ -472,7 +472,6 @@ footer {
   border: 1px solid  #b3490c;
 }
 
-
 #colorboton{
 
   background-color: #e45b0d;
@@ -494,4 +493,12 @@ footer {
 
   color: #ac4408;
   text-decoration: none;
+}
+
+/* Diseño de Tiempo */
+
+.diseñotime{
+
+  color: #ffffff;
+  text-align: center;
 }
