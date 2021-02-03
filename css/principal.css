@@ -139,6 +139,7 @@ header {
 
 .colorprincipal:hover {
   color: rgba(255, 81, 0, 0.719);
+  text-decoration: none;
 }
 
 .principal:hover .submenu {
@@ -302,7 +303,7 @@ header .textos-header {
 
 .iconos {
   color: #e45b0d;
-  padding: 150px;
+  margin-left: 23.5%;
 }
 
 .iconos:hover {
@@ -440,4 +441,12 @@ footer {
 
   text-align: center;
   margin-top: 5%;
+}
+
+/* Diseño de Tiempo */
+
+.diseñotime{
+
+  color: #ffffff;
+  text-align: center;
 }
