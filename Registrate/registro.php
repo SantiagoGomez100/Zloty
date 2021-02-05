@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -44,54 +44,53 @@
                                     style="text-decoration: none; color:white">
                                     inicia Sesion</a>
                             </button>
-                            
+
                         </div>
-                        
-                        
+
+
                     </div>
-        
+
                     <!-- div derecho imagen and texto  -->
                     <div class="col-lg-6  p-5 ">
                         <!-- parte del logo  -->
-                        
 
                         <!-- titulo principal -->
                         <section>
                             <h1 class="tituloInicio">Registrate</h1>
                         </section>
                         <!-- formulario  -->
-                        <form>
+                        <form action="guardarregistro.php" method="post">
                             <div class="form-row">
                                 <!-- nombre -->
                                 <div class="form-group ml-5">
                                     <label for="nombre" class="colorLabel">Nombre</label>
-                                    <input type="text" class="form-control inputPeque" id="nombre"
-                                        placeholder="nombre@gmail.com" required>
+                                    <input type="text" class="form-control inputPeque" name="nombre"
+                                    id="nombre" placeholder="Nombre" required>
                                 </div>
                                 <!-- Apellido -->
                                 <div class="form-group ml-4">
                                     <label for="Apellido" class="colorLabel">Apellido</label>
-                                    <input type="text" class="form-control inputPeque" id="apellido"
-                                        placeholder="Apellido" required>
+                                    <input type="text" class="form-control inputPeque" name="apellido"
+                                    id="apellido" placeholder="Apellido" required>
                                 </div>
                             </div>
                             <!-- email -->
                             <div class="form-group  ml-5">
                                 <label for="email" class="colorLabel">Email</label>
-                                <input type="email" class="form-control inputPeque" id="correo" placeholder="nombre@gmail.com"
-                                    required>
+                                <input type="email" class="form-control inputPeque" name="correo"
+                                id="correo" placeholder="nombre@gmail.com" required>
                             </div>
                             <!-- contacto -->
                             <div class="form-row">
                                 <div class="form-group ml-5">
                                     <label for="numero" class="colorLabel">N. Contacto</label>
-                                    <input type="text" class="form-control inputPeque" id="numerocel" placeholder="32333333232"
-                                        required>
+                                    <input type="text" class="form-control inputPeque" name="numerocel"
+                                    id="numerocel" placeholder="32333333232" required>
                                 </div>
                                 <!-- ciudad -->
                                 <div class="form-group col-md-4 ml-4">
                                     <label for="inputState" class="colorLabel">Ciudad</label>
-                                    <select id="inputState" type="text" class="form-control controls">
+                                    <select id="inputState" type="text" name="ciudad" class="form-control controls">
                                         <option selected>Bogotá D.C</option>
                                         <option>Medellín</option>
                                         <option>Calí</option>
@@ -117,21 +116,20 @@
                             <div class="form-row contenedorCompleto ml-5">
                                 <div class="form-group mt-3 ">
                                     <label for="password" class="colorLabel">Introduce una contraseña</label>
-                                    <input type="password" class="form-control inputPeque" id="contraseña"
-                                        placeholder="contraseña" required>
+                                    <input type="password" class="form-control inputPeque" id="password"
+                                        placeholder="contraseña" name="password" required>
                                 </div>
                                 <div class="form-group mt-3 ml-3">
                                     <label for="password" class="colorLabel">Confirmar contraseña</label>
-                                    <input type="password" class="form-control inputPeque" id="contraseña"
-                                        placeholder="contraseña" required>
+                                    <input type="password" class="form-control inputPeque" id="password"
+                                        placeholder="contraseña" name="confirpassword" required>
                                 </div>
                             </div>
                             <section class="contenedorCompletos ">
-                                <button type="submit" class="btn colorBoton ml-5 mt-3">
-                                    <a href="../inicioLogueado/inicio.html"> Registrate! </a>
-                                </button>
+                                <input type="submit" name="enviar" value="Enviar" class="btn colorBoton ml-5 mt-3">
+                                    <!-- <a href="../inicioLogueado/inicio.html"> Registrate! </a> -->
+                                </input>
                             </section>
-
                         </form>
 
                     </div>
