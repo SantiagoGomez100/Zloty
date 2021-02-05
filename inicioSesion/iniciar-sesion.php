@@ -1,3 +1,18 @@
+<?php
+
+    if(!isset($msg)){
+        $msg = "";
+    }else{
+    $msg = $_REQUEST['msg'];
+
+    if($msg == 1){
+        echo "Usuario ya registrado.";
+    }
+    }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <title> Zloty -Inicio Sesion</title>
+    <title> Zloty - Inicio Sesion</title>
     <link rel="stylesheet" href="./css/inicioSesion.css">
     <link rel="shortcut icon" href="./image/LOGOsolito.png" type="image/x-icon">
 </head>
@@ -30,17 +45,17 @@
                             <h1 class="tituloInicio">Inicio Sesión</h1>
                         </section>
                         <!-- formulario  -->
-                        <form>
+                        <form action="iniciador.php" method="post">
                             <!-- email -->
                             <div class="form-group mt-4">
                                 <label for="Email" class="colorLabel">Email</label>
-                                <input type="email" class="form-control inputPeque" id="correoinput"
+                                <input type="email" class="form-control inputPeque" id="correoinput" name="email"
                                     placeholder="nombre@gmail.com" required>
                             </div>
                             <!-- contraseña -->
                             <div class="form-group mt-3">
                                 <label for="password" class="colorLabel">Contraseña</label>
-                                <input type="password" class="form-control inputPeque" id="contrainput"
+                                <input type="password" class="form-control inputPeque" name ="password" id="contrainput"
                                     placeholder="............." required>
                             </div>
                             <!-- seccion de botones  -->
@@ -49,8 +64,9 @@
                                     <div class="row">
                                         <div class="col-sm">
                                             <!-- iniciar -->
-                                            <button type="submit" class="btn colorBoton mt-3">
-                                                <a href="../inicioLogueado/inicio.html">Inicio Sesión</a>
+                                            <!-- <button type="submit" class="btn colorBoton mt-3"> -->
+                                                <!-- <a href="../inicioLogueado/inicio.html">Inicio Sesión</a> -->
+                                                <input type="submit" name="enviar" value="Enviar" class="btn colorBoton ml-5 mt-3">
                                             </button>
                                         </div>
                                         <!-- olvidarContraseña -->

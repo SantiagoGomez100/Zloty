@@ -1,3 +1,15 @@
+<?php
+
+    //iniciar o reanudar la sesión.
+    session_start();
+
+    if (!isset($_SESSION['usuario'])) {
+        header("location:../inicioSesion/iniciar-sesion.php");
+        exit;
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -62,7 +74,13 @@
                                 <i class="fas fa-user-circle"></i>
                             </div>
                             <a class="nav-link letracolor " href="../modificarPerfil/ModificarPerfil.html" style="color: #ffffff;">
-                                Usuario</a>
+                                <?php
+
+                                $_SESSION['usuario'];
+
+                                ?>
+
+                            </a>
                             </div>
                         </li>
                     </ul>
