@@ -1,13 +1,16 @@
 <?php
 
-    //iniciar o reanudar la sesión.
-    session_start();
+    @session_start(([
+        'cookie_lifetime' => 86400,
+    ]));
 
-    if (!isset($_SESSION['usuario'])) {
-        header("location:../inicioSesion/iniciar-sesion.php");
+    if(! isset($_SESSION["usuario"])){
+        echo'<script type="text/javascript">
+            alert("Debes iniciar sesion para ver esta pagina.");
+            location="../index.html";
+            </script>';
         exit;
     }
-
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +27,11 @@
     <link rel="icon" href="imagenes/LOGOsolito.png">
     <link rel="stylesheet" href="css/principal.css">
 
-    <title>Zloty - Bienvenido Usuario</title>
+    <title>Zloty - Bienvenido <?php
+
+        echo $_SESSION['usuario'];
+
+    ?></title>
 
 </head>
 
@@ -47,20 +54,13 @@
                 <ul class="nav nav-pills nav-fill">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item dropdown">
-                            <div class="i">
-                                <i class="fas fa-user-friends"></i>
-                            </div>
-                            <a class="nav-link btn btn-link" href="#" style="color: #ffffff;">
-                                Conocenos</a>
-                        </li>
                         <li class="nav-item correrUsers">
                             <div class="i">
                                 <i class="fas fa-bell"></i>
                             </div>
                             <a class="nav-link letracolor " href="../notificaciones/notificaciones.html" style="color: #ffffff;">
                                 Notificaciones <span class="badge badge-light">0</span>
-                                <!-- <span class="sr-only">unread messages</span> --></a>
+                                </a>
                         </li>
                         <li class="nav-item correrUsers">
                             <div class="i">
@@ -76,12 +76,22 @@
                             <a class="nav-link letracolor " href="../modificarPerfil/ModificarPerfil.html" style="color: #ffffff;">
                                 <?php
 
-                                $_SESSION['usuario'];
+                                echo $_SESSION['usuario'];
 
                                 ?>
-
                             </a>
+                        </li>
+                        <li class="nav-item correrUser">
+                            <div class="i">
+                                <i class="fas fa-plus"></i>
                             </div>
+                                <a class="nav-link letracolor " href="<?php
+                                session_unset();
+                                session_destroy();
+
+                                ?>" style="color: #ffffff;">
+                            Cerrar Sesión
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -196,23 +206,23 @@
                     <h2 class="mb-0">
                         <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                         data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" id="colorletracollaje">
-                            Donaciones Realizadas
+                            Donaciones e Intercambios en Proceso
                         </button>
                 </h2>
             </div>
-
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
                     
                 </div>
             </div>
             </div>
+
             <div class="card">
                 <div class="card-header" id="headingTwo">
                 <h2 class="mb-0">
                     <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                     data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="colorletracollaje">
-                            Donaciones Canceladas
+                            Donaciones o Intercambios Cancelados
                     </button>
                 </h2>
             </div>
@@ -222,12 +232,13 @@
                 </div>
             </div>
             </div>
+
             <div class="card">
                 <div class="card-header" id="headingThree">
                 <h2 class="mb-0">
                     <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                     data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" id="colorletracollaje">
-                            Intercambios Realizados
+                            Donaciones o Intercambios Realizados
                     </button>
                 </h2>
             </div>

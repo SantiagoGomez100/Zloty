@@ -28,7 +28,10 @@
         header("location: ../inicioLogueado/logueado.php");
     }
     else {
-        echo "Error";
+        echo'<script type="text/javascript">
+            alert("Usuario o Contraseña erronea, por favor intentelo de nuevo.");
+            location="iniciar-sesion.php";
+            </script>';
     }
 
 ?>
