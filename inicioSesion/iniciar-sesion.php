@@ -49,14 +49,12 @@
                             <!-- email -->
                             <div class="form-group mt-4">
                                 <label for="Email" class="colorLabel">Email</label>
-                                <input type="email" class="form-control inputPeque" id="correoinput" name="email"
-                                    placeholder="nombre@gmail.com" required>
+                                <input type="email" class="form-control inputPeque" id="correoinput" name="email" required>
                             </div>
                             <!-- contraseña -->
                             <div class="form-group mt-3">
                                 <label for="password" class="colorLabel">Contraseña</label>
-                                <input type="password" class="form-control inputPeque" name ="password" id="contrainput"
-                                    placeholder="............." required>
+                                <input type="password" class="form-control inputPeque" name ="password" id="contrainput" required>
                             </div>
                             <!-- seccion de botones  -->
                             <section>
