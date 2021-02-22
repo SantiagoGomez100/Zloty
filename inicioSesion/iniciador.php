@@ -17,13 +17,11 @@
 
     if ($numusu == 1){
         session_start();
-        $_SESSION['usuario'] = $email;
-        echo $_SESSION['usuario'];
+        $consulta = "SELECT * FROM gestionusuario WHERE email = '$email'";
+        $resultado = $conexion ->query($consulta);
         while($usuario = $resultado->fetch_assoc()){
             $_SESSION['usuario'] = $usuario['nombre'];
             $_SESSION['correo'] = $usuario['email'];
-            echo $_SESSION['usuario'], $_SESSION['correo'];
-            exit(0);
         }
         header("location: ../inicioLogueado/logueado.php");
     }
