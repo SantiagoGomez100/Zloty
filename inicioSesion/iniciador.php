@@ -1,30 +1,34 @@
 <?php
 
     include ("../conexion/conexion.php");
+   
+    
+    //$idUsuario = $_POST[""];
     $email = $_POST["email"];
     $password = $_POST["password"];
     $numusu = 0;
 
-    $consulta = "SELECT * FROM gestionusuario WHERE email = '$email'";
-    $resultado = $conexion ->query($consulta);
 
+    $consulta = "SELECT * FROM gestionusuario WHERE email = '$email'";    
+    $resultado = $conexion->query($consulta);
+    
     while ($fila = $resultado->fetch_assoc()) {
         if(password_verify($password, $fila['password']))
         {
             $numusu++;
         }
-    }
-
+    }    
     if ($numusu == 1){
         session_start();
-        $_SESSION['usuario'] = $email;
-        echo $_SESSION['usuario'];
+        //$_SESSION['usuario'] = $email;
+        $consulta = "SELECT * FROM gestionusuario WHERE email = '$email'";    
+        $resultado = $conexion->query($consulta);
         while($usuario = $resultado->fetch_assoc()){
-            $_SESSION['usuario'] = $usuario['nombre'];
+            $_SESSION['nombre'] = $usuario['nombre'];
             $_SESSION['correo'] = $usuario['email'];
-            echo $_SESSION['usuario'], $_SESSION['correo'];
-            exit(0);
-        }
+            $_SESSION['idUsuario'] =$usuario['idUsuario'];
+           }
+        
         header("location: ../inicioLogueado/logueado.php");
     }
     else {

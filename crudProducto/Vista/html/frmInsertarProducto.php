@@ -91,7 +91,7 @@
                  <form  action="../Controlador/Cinsetarproducto.php" method="post">                                  
                     <center >
                         <div class="form-group">
-                            <input type="text" name="idProducto" class="form-control" placeholder="Codigo del producto" autofocus />
+                            <input type="text" name="idProducto" class="form-control" placeholder="Codigo del producto" autofocus  />
                         </div>    
                         <div class="form-group">
                             <input type="text" name="nombre_prod" class="form-control" placeholder="nombre del producto"/>
@@ -112,6 +112,7 @@
                         </div>
                         <class class="from-group">                            
                             <select name="cate_prod" class="form-control" placeholder="categoria del producto" method="post" >
+                                <option value="">Seleccione</option>
                                 <option value="Juguetes" >Juguetes</option>
                                 <option value="Accesorios">Accesorios</option>                                
                             </select>
@@ -121,6 +122,7 @@
 
                             
                             <select name="estado_prod" class="form-control" placeholder="estado del producto" method="post" >
+                                <option value="">Seleccione</option>
                                 <option value="Bueno" >Bueno</option>
                                 <option value="Regular">Regular</option>                                
                             </select>
