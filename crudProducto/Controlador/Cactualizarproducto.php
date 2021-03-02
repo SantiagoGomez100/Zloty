@@ -1,13 +1,13 @@
 <?php
-$doc = $_REQUEST['doc_prof'];
-$nom = $_REQUEST['nom_prof'];
-$ape = $_REQUEST['ape_prof'];
-$categoria = $_REQUEST['cate_prof'];
-$salario = $_REQUEST['sal_prof'];
+$idProducto = $_REQUEST['idProducto'];
+$nombreProducto = $_REQUEST['nombreProducto'];
+$descripcionProducto = $_REQUEST['descripcionProducto'];
+$categoria = $_REQUEST['cate_prod'];
+$estado_prod = $_REQUEST['estado_prod'];
 
 require_once "../Modelo/conectar.php";
-include "../Modelo/Mprofesor.php";
-    $profesor = new ProfesorModelo();//llamada al metodo constructor
-    $resultado = $profesor -> modificar_producto($doc, $nom, $ape, $categoria, $salario);
-include "Cprofesor.php"; 
+include "../Modelo/Mproducto.php";
+    $producto = new ProductoModelo();//llamada al metodo constructor
+    $resultado = $producto -> modificar_producto($idProducto, $nombreProducto, $descripcionProducto, $categoria, $estado_prod);
+include "Cproducto.php"; 
 ?>

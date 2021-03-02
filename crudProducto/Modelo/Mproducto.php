@@ -25,9 +25,9 @@ class ProductoModelo
         return $this->producto;
     }
     
-    public function get_producto1($doc)
+    public function get_producto1($idProducto)
     {
-        $consulta = $this->conexion_db->query("SELECT * FROM gestionarproducto WHERE nombreProducto = '$nombre'");
+        $consulta = $this->conexion_db->query("SELECT * FROM gestionarproducto WHERE idProducto = '$idProducto'");
         while ($filas = $consulta->fetch_assoc()) {
             $this->producto[] = $filas;
         }
@@ -36,15 +36,23 @@ class ProductoModelo
     }
     
     public function insertar_producto($codigo_producto,$nombre,$descripcion,$cantidad,$fecha_entrada,$TipoEntrada,$categoria,$estado,$idTipoIntercambio)
-    {   
-        
+    {        
         $resultado = $this->conexion_db->query("INSERT INTO gestionarproducto (idProducto, nombreProducto,descripcionProducto, idCategoria, idEstado) VALUES ('$codigo_producto','$nombre','$descripcion', '$categoria', '$estado');");
         $idusuario = $_SESSION['idUsuario'];
         if ($resultado) {
-
+            
             $resultado =$this->conexion_db->query("INSERT INTO intercambio (idTipoIntercambio, idUsuario, idProducto, cantidad) VALUES ('$idTipoIntercambio','$idusuario', '$codigo_producto','$cantidad');"); 
-        }               
-        
+             if ($resultado) {
+                $consulta =$this->conexion_db->query("SELECT idIntercambio FROM intercambio WHERE idProducto = '$idProducto';"); 
+
+                while ($filas = $consulta->fetch_assoc()) {
+                    $consulta2 = $this->producto = $filas;
+                    $resultado =$this->conexion_db->query("INSERT INTO entrada (fechaEntrada, tipoEntrada, idIntercambio, idUsuario, idProducto) VALUES ('$$fecha_entrada','$TipoEntrada','$consulta2','$idusuario', '$codigo_producto');"); 
+                }
+                                
+            }  
+        }  
+                
         $this->conexion_db->close();
         return $resultado;
     }
@@ -55,9 +63,9 @@ class ProductoModelo
         $this->conexion_db->close();
         return $resultado;
     }
-    public function modificar_producto($idProducto, $nombre, $descripcion, $categoria, $estado)
+    public function modificar_producto($idProducto, $nombreProducto, $descripcionProducto, $categoria, $estado_prod)
     {
-        $resultado = $this->conexion_db->query("UPDATE gestionarproducto SET  nombreProducto='$nombre', descripcionProducto ='$descripcion',  idcategoria = '$categoria', idestado= '$estado' WHERE doc_prof= '$idProducto' ");        
+        $resultado = $this->conexion_db->query("UPDATE gestionarproducto SET nombreProducto='$nombreProducto', descripcionProducto ='$descripcionProducto',  idCategoria = '$categoria', idEstado = '$estado_prod' WHERE idProducto= '$idProducto'");        
         
         $this->conexion_db->close();
         return $resultado;

@@ -12,7 +12,7 @@
 
         $encriptado = password_hash($password, PASSWORD_DEFAULT,["cost"=> 5]);
         $consulta = "SELECT * FROM gestionusuario WHERE email = '$correo'";
-        if($consulta == 1){
+        if($consulta ){
                 echo'<script type="text/javascript">
                 alert("Usuario ya esta registrado.");
                 location="registro.php";

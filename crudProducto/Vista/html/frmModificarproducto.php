@@ -1,6 +1,3 @@
-<?php
-    //include "../Modelo/mantenerSesion.php";
-?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -19,10 +16,8 @@
     <title>Zloty - Bienvenido Usuario</title>
 
 </head>
-
 <body style="background-color:#27292D;">
-
-    <header>
+<header>
     <!----------- menu principal --------- -->
 
     <nav id="menu" class="navbar navbar-expand-lg fixed-top bg-pink">
@@ -52,7 +47,8 @@
     </nav>
         
   <br>
-  <div class="carousel-inner">      
+
+            <div class="carousel-inner">      
             </div>
 
     <!-------- Cuadro que Acompaña el Carrusel ------------ -->
@@ -70,51 +66,78 @@
                     style="stroke: none; fill: #27292D;"></path>
             </svg></div>
     </header>
-    <div >
-    <div >        
-    <center>
-        <h1 style =" color: orange; ">LISTADO DE PRODUCTOS</h1><br>
-    <!-- <a href="Cnuevoproducto.php" style =" color: orange; ">NUEVO PRODUCTO</a> -->
-    </center>
-    
-    <table class="table table-bordered" style =" color: white; ">
-        <thead class="thead-dark">
-            <tr>
-            <th width="126" scope="col">IDPRODUCTO</th>
-            <th width="126" scope="col">NOMBRE</th>
-            <th width="126" scope="col">DESCRIPCION</th>
-            <th width="145" scope="col">CATEGORIA</th>
-            <th width="145" scope="col">ESTADO</th>
-            <th width="136" scope="col">MODIFICAR</th>
-            <th width="136" scope="col">RELIZAR DONACION</th>
-            <th width="136" scope="col">RELIZAR INTERCAMBIO</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <?php
-              foreach ($matrizproducto as $fila) {
-                ?>
-                    <td><?php echo $fila['idProducto']; ?></td>       
-                    <td><?php echo $fila['nombreProducto']; ?></td>
-                    <td><?php echo $fila['descripcionProducto']; ?></td>
-                    <td><?php echo $fila['idCategoria']; ?></td>
-                    <td><?php echo $fila['idEstado']; ?></td>
-                    <td><a href="../Controlador/Cmodificarproducto.php?idProducto=<?php echo $fila['idProducto']; ?>">Modificar</a></td>
-                    <td><a href="../Controlador/Cmodificarproducto.php?idProducto=<?php echo $fila['idProducto']; ?>">Donar</a></td>
-                    <td><a href="../Controlador/Cmodificarproducto.php?idProducto=<?php echo $fila['idProducto']; ?>">Intercambiar</a></td>
+    <div class="container">
+    <div class="row">
+          <div class ="col">
+            <img src="../../imagenes/cajon.jpg" alt="" width="70%" height="250px" style="margin-top: 10%; border-radius: 50%;">
+
+            <form class="entrega">
+            <div class="form-group">
+                <label for="exampleFormControlFile1"></label>
+                <input type="file" class="form-control-file">
+            </div>
+            </form>
+            
+          </div>
+        <div class="col-7">            
+          <div class="justify-content-xs-center" id="tablaProducto">
+              <div class="card-img-top">
+              <form action="CactualizarProducto.php?idProducto=<?php echo $matrizProducto[0]['idProducto'];?>" method="post">
+                <center>
+                  <table class="table " style =" color: white;">
+                    <tr>
+                      <td>Codigo del Producto</td>
+                      <td><label for="idProducto"></label>
+                        <input type="text" name="idProducto" id="idProducto" value ="<?php echo $matrizProducto[0]['idProducto'];?>" readonly />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Nombre del Producto</td>
+                      <td><label for="nombreProducto"></label>
+                        <input type="text" name="nombreProducto" id="nombreProducto" value ="<?php echo $matrizProducto[0]['nombreProducto'];?>" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Descripcion del Producto</td>
+                      <td><label for="descripcionProducto"></label>
+                        <input type="text" name="descripcionProducto" value ="<?php echo $matrizProducto[0]['descripcionProducto'];?>" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Categoria</td>
+                      <td>
+                      <select name="cate_prod" class="form-control" placeholder="categoria del producto" method="post" >
+                                <option value="">Seleccione</option>
+                                <option value="Juguetes" >Juguetes
+                                </option>
+                                <option value="Accesorios">Accesorios</option>                                
+                            </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Estado</td>
+                      <td>
+                      <select name="estado_prod" class="form-control" placeholder="estado del producto" method="post" >
+                                <option value="">Seleccione</option>
+                                <option value="Bueno" >Bueno</option>
+                                <option value="Regular">Regular</option>                                
+                            </select>
+                      </td>
+                    </tr>
                     
-            </tr> 
-            <?php
-            }
-            ?>
-        </tbody>
-        </table>
-    </div>  
-    </div>  
-
-        <!-------------- footer------------ -->
-
+                      <tr>
+                      <td>&nbsp;</td>
+                      <td><input name="modificar" type="submit" id="modificar" value="modificar" /></td>
+                    </tr>
+                  </table>
+                </center>
+              </form>
+              </div>
+                
+            </div>
+          </div>
+      </div>
+    </div>
     <footer class="content-footer">
 
     <a href="https://www.facebook.com/fundacionbellaflor">
@@ -171,6 +194,4 @@
         $('[data-toggle="popover"]').popover()
     })
     </script>
-    </body>
-
-</html>
+</body>

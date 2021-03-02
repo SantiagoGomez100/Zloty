@@ -37,7 +37,7 @@
                             <div class="i">
                                 <i class="fas fa-user"></i>
                             </div>
-                        <a class="nav-link btn btn-link" href="inicioSesion/iniciar-sesion.php" style="color: #ffffff;">
+                        <a class="nav-link btn btn-link" href="../../inicioSesion/iniciar-sesion.php" style="color: #ffffff;">
                             Iniciar Sesión</a>
                     </li>
                     <li class="nav-item">
