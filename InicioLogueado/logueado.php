@@ -1,15 +1,15 @@
 <?php
 
-    session_start(([
+    @session_start(([
         'cookie_lifetime' => 86400,
-    ])
-    );
+    ]));
 
-    if(!isset($_SESSION["usuario"])){
+    if(! isset($_SESSION["usuario"])){
         echo'<script type="text/javascript">
             alert("Debes iniciar sesion para ver esta pagina.");
             location="../index.html";
             </script>';
+        exit;
     }
 ?>
 
@@ -85,7 +85,11 @@
                             <div class="i">
                                 <i class="fas fa-plus"></i>
                             </div>
-                                <a class="nav-link letracolor " href="cerrar-sesion.php" style="color: #ffffff;">
+                                <a class="nav-link letracolor " href="<?php
+                                session_unset();
+                                session_destroy();
+
+                                ?>" style="color: #ffffff;">
                             Cerrar Sesión
                             </a>
                         </li>
