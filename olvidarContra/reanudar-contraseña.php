@@ -78,7 +78,7 @@
                                 <div class="form-row">
                                     <a href="../inicioSesion/inicioSesion.html"><i
                                             class="fas fa-arrow-left mt-4"></i></a>
-                                    <a href="../inicioSesion/inicioSesion.html" class="olvidoContrase">Volver al inicio
+                                    <a href="../inicioSesion/iniciar-sesion.php" class="olvidoContrase">Volver al inicio
                                     </a>
                                     <button type="submit" class="btn colorBoton ml-5 mt-3">
                                         <a href="../inicioLogueado/inicio.html"> Recuperar contraseña </a>

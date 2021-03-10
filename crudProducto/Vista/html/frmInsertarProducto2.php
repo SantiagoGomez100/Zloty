@@ -12,12 +12,12 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/principal.css">
     <link rel="icon" href="../../imagenes/LOGOsolito.png">
+    
 
-
-    <title>Inserta tu Donación o Intercambio</title>
+    <title>Zloty - Bienvenido Usuario</title>
 
 </head>
 
@@ -39,44 +39,29 @@
             <ul class="nav nav-pills nav-fill">
             <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
                 <ul class="navbar-nav ml-auto">
-                <li class="nav-item correrUser">
-                            <div class="i">
-                                <i class="fas fa-user-circle"></i>
-                            </div>
-                            <a class="nav-link letracolor " href="../modificarPerfil/ModificarPerfil.php" style="color: #ffffff;">
-                                <?php
-
-                                echo $_SESSION['nombre'];
-
-                                ?>
-                            </a>
-                        </li>
                     <li class="nav-item dropdown">
                         <div class="i">
                             <i class="fas fa-user-friends"></i>
                         </div>
                         <a class="nav-link btn btn-link" href="../../InicioLogueado/logueado.php" style="color: #ffffff;">
-                            Volver</a>
+                          Volver</a>
                     </li>
                 </ul>
             </div>
             </ul>
         </div>
     </nav>
+        
+  <br>
 
-    <br>
-
-            <div class="carousel-inner">
+            <div class="carousel-inner">      
             </div>
 
     <!-------- Cuadro que Acompaña el Carrusel ------------ -->
 
         <div class="contenedorletras" >
-            <h1><?php
-
-                echo $_SESSION['nombre'];
-
-            ?> inserta los datos del objeto que vas a dar.</h1>
+            <h1>Con Zloty intercambia o dona Productos de manera Rapida</h1>
+            
         </div>
 
     <!---------smoon ola  de la pagina  ----- -->
@@ -98,16 +83,20 @@
                 <input type="file" class="form-control-file">
             </div>
             </form>
-
+            
     </div>
-        <div class="col-7">
-            <div class="justify-content-xs-center" id="tablaProducto">
-                <div class="card-img-top">
-                <form  action="../Controlador/Cinsetarproducto.php" method="post">
+        <div class="col-7">            
+             <div class="justify-content-xs-center" id="tablaProducto">
+                 <div class="card-img-top">
+                 <form  action="../Controlador/Cinsetarproducto2.php" method="post"> 
+                        <div class="form-group">
+                        <label for="exampleFormControlFile1"></label>
+                        <input type="file" class="form-control-file">
+                        </div>                             
                     <center >
                         <div class="form-group">
                             <input type="text" name="idProducto" class="form-control" placeholder="Codigo del producto" autofocus  />
-                        </div>
+                        </div>    
                         <div class="form-group">
                             <input type="text" name="nombre_prod" class="form-control" placeholder="nombre del producto"/>
                         </div>
@@ -120,47 +109,41 @@
                         </div>
                         <div class="form-group">
                         <input name="fecha_entrada"   class="form-control"   type="date" name="fecha_entrada" id="fecha_entrada" placeholder="fecha entrada">
-
+                        
                         </div>
-                        <div>
-                        <class class="from-group">
-                            <select name="tipoIntercambio" class="form-control" placeholder="categoria del producto" method="post" >
-                                <option value="">Tipo de idIntercambio</option>
-                                <option value="Juguetes" >Donacion</option>
-                                <option value="Accesorios">Trueque</option>
-                            </select>
-                        </class>
+                        <div class="form-group">
+                            <input name="TipoEntrada"   class="form-control" placeholder="intercambio"  readonly>
                         </div>
-                        <br>
-                        <class class="from-group">
+                        <class class="from-group">                            
                             <select name="cate_prod" class="form-control" placeholder="categoria del producto" method="post" >
-                                <option value="">Categoria</option>
+                                <option value="">Seleccione</option>
                                 <option value="Juguetes" >Juguetes</option>
-                                <option value="Accesorios">Accesorios</option>
+                                <option value="Accesorios">Accesorios</option>                                
                             </select>
                         </class>
                         <br>
                         <class class="from-group">
 
+                            
                             <select name="estado_prod" class="form-control" placeholder="estado del producto" method="post" >
-                                <option value="">Estado</option>
+                                <option value="">Seleccione</option>
                                 <option value="Bueno" >Bueno</option>
-                                <option value="Regular">Regular</option>
+                                <option value="Regular">Regular</option>                                
                             </select>
-                        </class>
+                        </class> 
                         <br>
                         <input name="guardar" type="submit" class="btn btn-success btn-block" value="Guardar Producto" style=" background: orange;" />
 
                     </center>
-                    </form>
-                    </div>
-
-                </div>
+                    </form> 
+                 </div>
+                
+             </div>
         </div>
-
+        
     </div>
     </div>
-    <br>
+    
 
 
     <!-------------- footer------------ -->
@@ -171,14 +154,14 @@
             <img src="../../imagenes/logoBellaFlor.png" alt="" width="190px" height="100px">
         </a>
         <div>
-
+            
             <h2 class="titulo-final">&copy; Fundación Bella Flor | Grup-Zloty</h2>
             <div class="diseñotime">
                 <script src="js/time.js"></script>
             </div>
-            <a class="nav-link btn btn-link" href="php/EquipoZloty.php" id="boton" >  Equipo Zloty </a>
+            <a class="nav-link btn btn-link" href="php/EquipoZloty.php" >  Equipo Zloty </a>
         </div>
-
+        
         <img src="../../imagenes/bigblanco.png" alt="" width="180px" height="100px">
     </footer>
 

@@ -40,7 +40,7 @@
                                 </div>
                             </div>
                             <button type="submit" class="btn colorRegistro mt-3"><a
-                                    href="../inicioSesion/inicioSesion.html"
+                                    href="../inicioSesion/iniciar-sesion.php"
                                     style="text-decoration: none; color:white">
                                     inicia Sesion</a>
                             </button>

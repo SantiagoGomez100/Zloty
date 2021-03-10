@@ -450,3 +450,51 @@ footer {
   color: #ffffff;
   text-align: center;
 }
+
+/*Diseño de tablas de Donacion e Intercambio*/
+
+#boton{
+
+  color: #ac4408;
+}
+
+#boton:hover{
+
+  color: #74310d;
+  text-decoration: none;
+}
+
+.diseñotablas{
+
+  color: orange;
+  text-align: center;
+  padding: 60px 0;
+  width: 89%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.tablastexto{
+
+  color: white;
+  text-align: center;
+}
+
+.contenedorfinalizar{
+
+  padding: 30px 0;
+  width: 50%;
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+#botonfinalizar{
+
+  border-radius: 10px 10px 10px 10px;
+  border-color: #2b170c;
+  color: #ffffff;
+  background-color: #ac4408;
+}
