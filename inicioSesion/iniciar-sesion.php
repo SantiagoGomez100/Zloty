@@ -69,14 +69,14 @@
                                         <!-- olvidarContraseña -->
                                         <div class="col-sm mt-3">
                                             <i class="fas fa-key"></i>
-                                            <a href="../olvidarContra/olvidarContraseña.html"
+                                            <a href="../olvidarContra/reanudar-contraseña.php"
                                                 class="olvidoContrase">olvidaste tu clave</a>
                                         </div>
                                     </div>
                                 </div>
                             </section>
                             <!-- flecha de regreso  -->
-                            <a href="../Inicio_Principal/inicio.html"><i class="fas fa-arrow-left mt-4"></i></a>
+                            <a href="../index.html"><i class="fas fa-arrow-left mt-4"></i></a>
                         </form>
 
                     </div>
@@ -99,7 +99,7 @@
                                 </div>
                             </div>
                             <button type="submit" class="btn colorRegistro mt-3"><a
-                                    href="../Registrate/registrarse.html"
+                                    href="../Registrate/registro.php"
                                     style="text-decoration: none; color:white">
                                     Registrate!</a>
                             </button>

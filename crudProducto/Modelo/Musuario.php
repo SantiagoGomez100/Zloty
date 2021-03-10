@@ -11,7 +11,7 @@ if(! isset($_SESSION["usuario"])){
     exit;
 } */ 
 require_once "../Modelo/conectar.php";
-include "../Modelo/mantenerSesion.php";
+require_once "../Modelo/mantenerSesion.php";
 class UsuarioModelo 
 {
     protected $conexion_db; // almacenar conexión a la bd

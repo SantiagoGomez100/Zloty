@@ -69,7 +69,7 @@
                             <div class="i">
                             <i class="fas fa-border-style"></i>
                             </div>
-                            <a class="nav-link letracolor " href="../crudProducto/Controlador/Cproducto.php" style="color: #ffffff;">
+                            <a class="nav-link letracolor " href="../crudProducto/Controlador/Cproductosid.php" style="color: #ffffff;">
                                 Tablas de productos</a>
                         </li>
                         <li class="nav-item correrUsers">
@@ -77,20 +77,14 @@
                                 <i class="fas fa-plus"></i>
                             </div>
                             <a class="nav-link letracolor " href="../crudProducto/Controlador/Cdatos.php" style="color: #ffffff;">
-                                Realizar Donación</a>
+                                Realizar Donación e Intercambio</a>
                         </li>
-                        <li class="nav-item correrUsers">
-                            <div class="i">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                            <a class="nav-link letracolor " href="../crudProducto/Vista/html/frmInsertarProducto.php" style="color: #ffffff;">
-                                Realizar Intercambio</a>
-                        </li>
+                        
                         <li class="nav-item correrUser">
                             <div class="i">
                                 <i class="fas fa-user-circle"></i>
                             </div>
-                            <a class="nav-link letracolor " href="../modificarPerfil/ModificarPerfil.html" style="color: #ffffff;">
+                            <a class="nav-link letracolor " href="../modificarPerfil/ModificarPerfil.php" style="color: #ffffff;">
                                 <?php
 
                                 echo $_SESSION['nombre'];
