@@ -1,0 +1,128 @@
+html body{
+
+    background-color: #27292d;
+    width: auto;
+    margin: auto;
+    box-sizing:border-box;
+
+}
+
+.bg-pink {
+    background-color: transparent;
+    background-color: #d8670bd9;
+    transition: all 1.5s ease;
+    color: #ffffff;
+    font-weight: lighter;
+}
+
+.main {
+    background-color: #d8670bd9;
+    color: #ffffff;
+}
+
+.letracolor {
+    color: white;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.letracolor:hover {
+    color: white;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.fa-bars {
+    font-size: 30px;
+    color: #ffffff;
+}
+.colorBoton {
+    background-color: #ec7607f6;
+    color: aliceblue;
+    width: 100%;
+    font-size: 18px;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+.colorBoton:hover {
+    background-color: #2a2a2cf6;
+    color: aliceblue;
+    width: 100%;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+.submenucategoria{
+    background-color:transparent;
+    border: #d8670bd9;
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+    width: 35%;
+}
+.submenucategoria:hover{
+    background-color: #d8670bd9;
+    border: #d8670bd9;
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.imagenPerfil{
+    border-radius: 50%;
+}
+
+.cierresesion{
+
+    border: 3px solid #e06e11;
+    color: white;
+    text-decoration: none;
+    background-color: #e06e11;
+    padding: 3%;
+    margin-left: 20%;
+    border-radius: 35px 35px 35px 35px;
+}
+
+.entrega{
+
+    color: white;
+}
+
+.col{
+
+    padding: 0;
+}
+
+.botones{
+
+    margin-left: -15%;
+}
+
+.botoncierre{
+    margin-top: 120px;
+    margin-left: -10%;
+}
+
+footer {
+    background-color: #232528;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+    }
+
+    .content-foo {
+        display: flex;
+        /* color te */
+        width: 100%;
+        justify-content: space-evenly;
+        margin: auto;
+        padding-bottom: 50px;
+        flex-direction: row;
+        text-align:center;
+        box-sizing:border-box;
+    }
+
+    .titulo-final {
+    text-align: center;
+    font-size: 25px 0 0 0;
+    margin: 20px;
+    color: white;
+    }
