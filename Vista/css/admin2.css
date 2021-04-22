@@ -20,7 +20,10 @@ body {
     width: 20px;
     height: 20px;
 }
-
+.small{
+    background: red;
+    width: 1%;
+}
 #colornav{
 
     background-color: rgb(245, 119, 2);

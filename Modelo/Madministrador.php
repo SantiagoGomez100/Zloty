@@ -28,24 +28,40 @@ class Administrador
     }
     public function get_usuario1($idusuario)
     {
-        $consulta = $this->conexion_db->query("SELECT * FROM gestionusuario WHERE idUsuario = '$idUsuario'");
+        $consulta = $this->conexion_db->query("SELECT * FROM gestionusuario WHERE idUsuario = '$idusuario'");
         while ($filas = $consulta->fetch_assoc()) {
             $this->usuario[] = $filas;
         }
         $this->conexion_db->close();
         return $this->usuario;
     }
-    public function eliminar_usuario($idusuario)
+    public function eliminar_usuario($idUsuario)
     {
-        $resultado = $this->conexion_db->query("DELETE FROM gestionusuario WHERE idUsuario = '$idusuario'");
+        $resultado = $this->conexion_db->query("DELETE FROM gestionusuario WHERE idUsuario = '$idUsuario'");
 
         $this->conexion_db->close();
         return $resultado;
     }
-    public function modificar_producto($idusuario, $nombre, $apellido, $email, $tel)
+    public function modificar_usuario($idUsuario, $nombre, $apellido, $email, $telefono, $ciudad,$pass)
     {
-        $resultado = $this->conexion_db->query("UPDATE gestionusuario SET  nombre='$nombre', apellido ='$apellido',  email = '$email', telefono= '$tel' WHERE idUsuario= '$idusuario' ");        
+        $resultado = $this->conexion_db->query("UPDATE gestionusuario SET  nombre='$nombre', apellido ='$apellido',  email = '$email', telefono= '$telefono', ciudad='$ciudad', password='$pass' WHERE idUsuario= '$idUsuario' ");        
 
+        $this->conexion_db->close();
+        return $resultado;
+    }
+    public function modificar_producto($idProducto,$nombre,$descripcion,$existencias,$categoria1,$estado1)
+    {
+        $resultado = $this->conexion_db->query("UPDATE gestionarproducto SET  nombreProducto='$nombre', descripcionProducto ='$descripcion',  Existencias = '$existencias', idCategoria= '$categoria1', idEstado ='$estado1' WHERE idProducto= '$idProducto' ");        
+
+        $this->conexion_db->close();
+        return $resultado;
+    }
+    public function eliminar_producto($idProducto){
+
+        $resultado = $this->conexion_db->query("DELETE FROM intercambio WHERE idProducto = '$idProducto'");
+        if ($resultado){
+            $resultado = $this->conexion_db->query("DELETE FROM gestionarproducto WHERE idProducto = '$idProducto'");
+        }
         $this->conexion_db->close();
         return $resultado;
     }
@@ -55,7 +71,7 @@ class Administrador
 
     public function get_administrador()
     {
-        $consulta = $this->conexion_db->query("SELECT * FROM usuarioadministrador");
+        $consulta = $this->conexion_db->query("SELECT * FROM gestionfundacion");
         while ($filas = $consulta->fetch_assoc()) {
             $this->administrador[] = $filas;
         }
@@ -65,7 +81,7 @@ class Administrador
 
     public function get_administrador1($idAdmin)
     {
-        $consulta = $this->conexion_db->query("SELECT * FROM usuarioadministrador WHERE idUsuario = '$idAdmin'");
+        $consulta = $this->conexion_db->query("SELECT * FROM gestionfundacion WHERE idUsuario = '$idAdmin'");
         while ($filas = $consulta->fetch_assoc()) {
             $this->administrador[] = $filas;
         }

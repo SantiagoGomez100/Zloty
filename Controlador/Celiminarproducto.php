@@ -1,10 +1,12 @@
 <?php
+	session_start();
 
-    $doc = $_REQUEST['doc_prof'];
-    require_once "../Modelo/conectar.php";
-    include "../Modelo/Mprofesor.php";
-        $profesor = new ProfesorModelo();
-        $resultado = $profesor -> eliminar_profesor($doc);
-    include "Cprofesor.php";
+$idProducto = $_GET['idProducto'];
+require_once "../Modelo/conectar.php";
+require_once "../Modelo/Madministrador.php";
+    $producto = new Administrador();//llamada al metodo constructor
+    $resultado = $producto -> eliminar_producto($idProducto);
+
+    header('location: ../Controlador/Cdonacionesadmin.php');
 
 ?>

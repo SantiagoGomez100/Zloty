@@ -9,7 +9,7 @@
     $numusu = 0;
 
 
-    $consulta = "SELECT * FROM usuarioadministrador WHERE email = '$email'";
+    $consulta = "SELECT * FROM gestionfundacion WHERE email = '$email'";
     $resultado = $conexion->query($consulta);
 
     while ($fila = $resultado->fetch_assoc()) {
@@ -21,7 +21,7 @@
     if ($numusu == 1){
         session_start();
         //$_SESSION['usuario'] = $email;
-        $consulta = "SELECT * FROM usuarioadministrador WHERE email = '$email'";
+        $consulta = "SELECT * FROM gestionfundacion WHERE email = '$email'";
         $resultado = $conexion->query($consulta);
         while($usuario = $resultado->fetch_assoc()){
             $_SESSION['nombre'] = $usuario['nombre'];

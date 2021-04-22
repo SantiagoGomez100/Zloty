@@ -26,7 +26,7 @@ class UsuarioModelo
     }
     public function get_usuario1($idusuario)
     {
-        $consulta = $this->conexion_db->query("SELECT * FROM gestionusuario WHERE idUsuario = '$idUsuario'");
+        $consulta = $this->conexion_db->query("SELECT * FROM gestionusuario WHERE idUsuario = '$idusuario'");
         while ($filas = $consulta->fetch_assoc()) {
             $this->usuario[] = $filas;
         }
@@ -40,7 +40,7 @@ class UsuarioModelo
         $this->conexion_db->close();
         return $resultado;
     }
-    public function modificar_producto($idusuario, $nombre, $apellido, $email, $tel)
+    public function modificar_usuario($idusuario, $nombre, $apellido, $email, $tel)
     {
         $resultado = $this->conexion_db->query("UPDATE gestionusuario SET  nombre='$nombre', apellido ='$apellido',  email = '$email', telefono= '$tel' WHERE idUsuario= '$idusuario' ");        
 

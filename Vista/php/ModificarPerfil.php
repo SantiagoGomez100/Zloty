@@ -1,6 +1,6 @@
 <?php
     require ('../../Modelo/conexion.php');
-    require ("../../Moderlo/MmodificarPerfil.php");
+    require ("../../Modelo/MmodificarPerfil.php");
     session_start();
 
     $id = $_SESSION['idUsuario'];
@@ -12,19 +12,21 @@
 
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-    <meta name="author" content="JONATHAN SIERRA">
-    <meta name="description" content="Se realiza un formulario donde trae los datos de la base de datos (adbzloty) se actualiza esta informacion desde el archivo modicar.php, el cual finlmente llama modifi.php donde se actualiza y cierra conexion.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../img/LOGOsolito.png">
-    <link rel="stylesheet" href="../css/modificarPerfil.css">
-    <title>Perfil</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+  <meta name="author" content="JONATHAN SIERRA">
+  <meta name="description"
+    content="Se realiza un formulario donde trae los datos de la base de datos (adbzloty) se actualiza esta informacion desde el archivo modicar.php, el cual finlmente llama modifi.php donde se actualiza y cierra conexion.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../img/LOGOsolito.png">
+  <link rel="stylesheet" href="../css/modificarPerfil.css">
+  <title>Perfil</title>
 </head>
 
 <body>
@@ -60,13 +62,13 @@
     <div class="row">
       <div class="col">
 
-        <form action="imgeng.php" nctype="multipart/form-data" class="entrega" >
+        <form action="imgeng.php" nctype="multipart/form-data" class="entrega">
           <div class="form-group">
-					<!-- <label for="img" class="col-sm-2 control-label">Perfil</label> -->
-					<div class="col-sm-10">
-						<!-- <input type="file" class="form-control" id="img" name="img"> -->
+            <!-- <label for="img" class="col-sm-2 control-label">Perfil</label> -->
+            <div class="col-sm-10">
+              <!-- <input type="file" class="form-control" id="img" name="img"> -->
 
-						<?php
+              <?php
 							$path = "imagenes/".$id;
 							if(file_exists($path)){
 								$directorio = opendir($path);
@@ -82,105 +84,105 @@
 
 						?>
 
-					</div>
+            </div>
         </form>
-				</div>
-        <form action="imageng.php" method="POST" class="entrega"  enctype="multipart/form-data">
-          <div class="form-group">
-
-            <label for="img" ></label>
-            <div class="col-sm">
-
-            <input type="file" name="img" id="img" accept="image/*"  multiple="" >
-              </div>
-              <button type="submit" > <a>Cambiar foto</a> </button>
-          </div>
-        </form>
-
-
-        <div class="botoncierre">
-          <a href="cerrar-sesion.php" class="cierresesion">Cerrar Sesion</a>
-        </div>
       </div>
+      <form action="imageng.php" method="POST" class="entrega" enctype="multipart/form-data">
+        <div class="form-group">
 
+          <label for="img"></label>
+          <div class="col-sm">
 
-      <!-- actualizar datos formulario -->
-      <div class="col-7">
-        <form action="../../Controlador/CmodificarPerfil.php" method="POST">
-
-          <div class="form-row contenedorCompleto">
-
-            <div class="form-group col-md-10" style="margin-top: 10%;">
-              <label for="inputAddress" style="color: white;">Nombre:</label>
-              <input type="text" class="form-control" name="nombre" id="inputAddress"
-                placeholder="Ingrese Nombre" value="<?php echo $matrizusuario[0]['nombre'];?>" autofocus required>
-            </div>
-            <div class="form-group col-md-10";>
-              <label for="inputAddress" style="color: white;">Apellido:</label>
-              <input type="text" class="form-control" name="apellido" id="inputAddress"
-                placeholder="Ingrese Apellido" value="<?php echo $matrizusuario[0]['apellido']; ?>" autofocus required>
-            </div>
-
-
-            <div class="form-group col-md-10">
-              <label for="inputAddress" style="color: white;">Telefono de contacto:</label>
-              <input type="text" class="form-control" name="telefono"
-                value="<?php echo $matrizusuario[0]['telefono']; ?>"  placeholder="30000000" required>
-            </div>
-
-            <div class="form-group col-md-10">
-              <label for="inputAddress" style="color: white;">Ciudad:</label>
-                <select id="inputState" type="text" name="ciudad"
-                  value="<?php echo $matrizusuario[0]['ciudad']; ?>" class="form-control controls">
-                <option selected>Bogotá D.C</option>
-                <option>Medellín</option>
-                <option>Calí</option>
-                <option>Barranquilla</option>
-                <option>Cartagena</option>
-                <option>Bucaramanga</option>
-                <option>Manizales</option>
-                <option>Pereira</option>
-                <option>Cúcuta</option>
-                <option>Tolima</option>
-                <option>Valledupar</option>
-                <option>Boyáca</option>
-                <option>Pasto</option>
-                <option>Armenia</option>
-                <option>Villavicencio</option>
-                <option>Neiva</option>
-                <option>Popayán</option>
-                <option>Armenia</option>
-                </select>
-
-            </div>
+            <input type="file" name="img" id="img" accept="image/*" multiple="">
           </div>
-          <div class="container botones">
-            <div class="row">
-              <div class="col-sm">
-                <button type="submit" class="btn colorBoton "> <a href="logueado.php"
-                    style="text-decoration: none; color: white;">Confirmar Cambios</a> </button> </div>
-              <div class="col-sm">
-                <button type="submit" class="btn colorBoton  "><a href="logueado.php"
-                    style="text-decoration: none; color: white;">Cancelar </a> </button> </div>
-            </div>
-          </div>
-        </form>
+          <button type="submit"> <a>Cambiar foto</a> </button>
+        </div>
+      </form>
+
+
+      <div class="botoncierre">
+        <a href="cerrar-sesion.php" class="cierresesion">Cerrar Sesion</a>
       </div>
     </div>
-</div>
-</div>
+
+
+    <!-- actualizar datos formulario -->
+    <div class="col-7">
+      <form action="../../Controlador/CmodificarPerfil.php" method="POST">
+
+        <div class="form-row contenedorCompleto">
+
+          <div class="form-group col-md-10" style="margin-top: 10%;">
+            <label for="inputAddress" style="color: white;">Nombre:</label>
+            <input type="text" class="form-control" name="nombre" id="inputAddress" placeholder="Ingrese Nombre"
+              value="<?php echo $matrizusuario[0]['nombre'];?>" autofocus required>
+          </div>
+          <div class="form-group col-md-10" ;>
+            <label for="inputAddress" style="color: white;">Apellido:</label>
+            <input type="text" class="form-control" name="apellido" id="inputAddress" placeholder="Ingrese Apellido"
+              value="<?php echo $matrizusuario[0]['apellido']; ?>" autofocus required>
+          </div>
+
+
+          <div class="form-group col-md-10">
+            <label for="inputAddress" style="color: white;">Telefono de contacto:</label>
+            <input type="text" class="form-control" name="telefono" value="<?php echo $matrizusuario[0]['telefono']; ?>"
+              placeholder="30000000" required>
+          </div>
+
+          <div class="form-group col-md-10">
+            <label for="inputAddress" style="color: white;">Ciudad:</label>
+            <select id="inputState" type="text" name="ciudad" value="<?php echo $matrizusuario[0]['ciudad']; ?>"
+              class="form-control controls">
+              <option selected>Bogotá D.C</option>
+              <option>Medellín</option>
+              <option>Calí</option>
+              <option>Barranquilla</option>
+              <option>Cartagena</option>
+              <option>Bucaramanga</option>
+              <option>Manizales</option>
+              <option>Pereira</option>
+              <option>Cúcuta</option>
+              <option>Tolima</option>
+              <option>Valledupar</option>
+              <option>Boyáca</option>
+              <option>Pasto</option>
+              <option>Armenia</option>
+              <option>Villavicencio</option>
+              <option>Neiva</option>
+              <option>Popayán</option>
+              <option>Armenia</option>
+            </select>
+
+          </div>
+        </div>
+        <div class="container botones">
+          <div class="row">
+            <div class="col-sm">
+              <button type="submit" class="btn colorBoton "> <a href="logueado.php"
+                  style="text-decoration: none; color: white;">Confirmar Cambios</a> </button> </div>
+            <div class="col-sm">
+              <button type="submit" class="btn colorBoton  "><a href="logueado.php"
+                  style="text-decoration: none; color: white;">Cancelar </a> </button> </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  </div>
 
 
   <footer>
-      <div class="content-foo">
+    <div class="content-foo">
       <a href="https://www.facebook.com/fundacionbellaflor">
-          <img src="../img/logoBellaFlor.png" alt="" width="190px" height="100px">
+        <img src="../img/logoBellaFlor.png" alt="" width="190px" height="100px">
       </a>
       <div>
-          <h2 class="titulo-final">&copy; Fundación Bella Flor | Grup-Zloty</h2>
-          <div class="diseñotime">
-              <script src="../js/time.js"></script>
-          </div>
+        <h2 class="titulo-final">&copy; Fundación Bella Flor | Grup-Zloty</h2>
+        <div class="diseñotime">
+          <script src="../js/time.js"></script>
+        </div>
       </div>
       <img src="../img/bigblanco.png" alt="" width="180px" height="100px">
     </div>
