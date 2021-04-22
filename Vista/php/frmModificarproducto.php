@@ -48,8 +48,7 @@
         
   <br>
 
-            <div class="carousel-inner">      
-            </div>
+
 
     <!-------- Cuadro que Acompaña el Carrusel ------------ -->
 

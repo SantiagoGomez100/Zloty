@@ -1,7 +1,8 @@
 <?php
-    require_once ("../Modelo/conectar.php");
-    include ("../Modelo/Madministrador.php");
+   
 
+    require_once("../Modelo/conectar.php");
+    require_once("../Modelo/Madministrador.php");
     // Llama a las tablas.
     $usuario = new Administrador();
     $matrizusuarios = $usuario->get_usuario();

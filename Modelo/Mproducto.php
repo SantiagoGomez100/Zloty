@@ -51,13 +51,10 @@ class ProductoModelo
     {
         $resultado = $this->conexion_db->query("INSERT INTO gestionarproducto (idProducto, nombreProducto,descripcionProducto,existencias, idCategoria, idEstado) VALUES ('$codigo_producto','$nombre','$descripcion','$cantidad ','$categoria', '$estado');");
         $idusuario = $_SESSION['idUsuario'];
+        
         if ($resultado) {
-
             $resultado =$this->conexion_db->query("INSERT INTO intercambio (idTipoIntercambio, idUsuario, idProducto, cantidad) VALUES ('$idTipoIntercambio','$idusuario', '$codigo_producto','$cantidad');"); 
-            //  if ($resultado) {
-            //     $consulta =$this->conexion_db->query("SELECT idIntercambio FROM intercambio WHERE idProducto = '$$codigo_producto';");
-
-            // }
+            
         }
 
         $this->conexion_db->close();

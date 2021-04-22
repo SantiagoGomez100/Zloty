@@ -42,7 +42,7 @@
 
     <header>
 
-    <!----------- menu principal --------- -->
+        <!----------- menu principal --------- -->
 
         <nav id="menu" class="navbar navbar-expand-lg fixed-top bg-pink">
             <div class="container">
@@ -84,7 +84,7 @@
                             <div class="i">
                                 <i class="fas fa-user-circle"></i>
                             </div>
-                            <a class="nav-link letracolor " href="../../Vista/php/ModificarPerfil.php" style="color: #ffffff;">
+                            <a class="nav-link letracolor " href="../php/ModificarPerfil.php" style="color: #ffffff;">
                                 <?php
 
                                 echo $_SESSION['nombre'];

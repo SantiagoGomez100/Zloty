@@ -11,17 +11,12 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Vista/css/principal.css">
     <link rel="icon" href="../Vista/img/LOGOsolito.png">
+    
 
-
-    <title>Zloty - Lista de <?php
-
-        echo $_SESSION['nombre'];
-
-        ?>
-    </title>
+    <title>Zloty - Bienvenido Usuario</title>
 
 </head>
 
@@ -33,7 +28,7 @@
     <nav id="menu" class="navbar navbar-expand-lg fixed-top bg-pink">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="../Vista/img/bigblanco.png" alt="" height="80px" width="160px">
+                <img src="../../imagenes/bigblanco.png" alt="" height="80px" width="160px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -43,43 +38,28 @@
             <ul class="nav nav-pills nav-fill">
             <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item correrUser">
-                            <div class="i">
-                                <i class="fas fa-user-circle"></i>
-                            </div>
-                            <a class="nav-link letracolor " href="../modificarPerfil/ModificarPerfil.php" style="color: #ffffff;">
-                                <?php
-
-                                echo $_SESSION['nombre'];
-
-                                ?>
-                            </a>
-                        </li>
                     <li class="nav-item dropdown">
                         <div class="i">
                             <i class="fas fa-user-friends"></i>
                         </div>
                         <a class="nav-link btn btn-link" href="../../InicioLogueado/logueado.php" style="color: #ffffff;">
-                            Inicio</a>
+                          Volver</a>
                     </li>
                 </ul>
             </div>
             </ul>
         </div>
     </nav>
-
-    <br>
-    <div class="carousel-inner">
+        
+  <br>
+  <div class="carousel-inner">      
             </div>
 
     <!-------- Cuadro que Acompaña el Carrusel ------------ -->
 
         <div class="contenedorletras" >
-            <h1>Listado de Productos de <?php
-
-echo $_SESSION['nombre'];
-
-?></h1>
+            <h1>Con Zloty intercambia o dona Productos de manera Rapida</h1>
+            
         </div>
 
     <!---------smoon ola  de la pagina  ----- -->
@@ -90,11 +70,15 @@ echo $_SESSION['nombre'];
                     style="stroke: none; fill: #27292D;"></path>
             </svg></div>
     </header>
-
-    <div>
-    <div>
-    <table class="diseñotablas">
-        <thead>
+    <div >
+    <div >        
+    <center>
+        <h1 style =" color: orange; ">LISTADO DE PRODUCTOS</h1><br>
+    <!-- <a href="Cnuevoproducto.php" style =" color: orange; ">NUEVO PRODUCTO</a> -->
+    </center>
+    
+    <table class="table table-bordered" style =" color: white; ">
+        <thead class="thead-dark">
             <tr>
             <th width="126" scope="col">IDPRODUCTO</th>
             <th width="126" scope="col">NOMBRE</th>
@@ -108,47 +92,44 @@ echo $_SESSION['nombre'];
         <tbody>
             <tr>
                 <?php
-                    foreach ($matrizproducto as $fila) {
+              foreach ($matrizproducto as $fila) {
                 ?>
-                    <td class="tablastexto"><?php echo $fila['idProducto']; ?></td>
-                    <td class="tablastexto"><?php echo $fila['nombreProducto']; ?></td>
-                    <td class="tablastexto"><?php echo $fila['descripcionProducto']; ?></td>
-                    <td class="tablastexto"><?php echo $fila['Existencias']; ?></td>
-                    <td class="tablastexto"><?php echo $fila['idCategoria']; ?></td>
-                    <td class="tablastexto"><?php echo $fila['idEstado']; ?></td>
-                    <td><a href="../Controlador/Cmodificarproducto.php?idProducto=<?php echo $fila['idProducto'];?>"
-                    id="boton">Modificar</a></td>
-            </tr>
+                    <td><?php echo $fila['idProducto']; ?></td>       
+                    <td><?php echo $fila['nombreProducto']; ?></td>
+                    <td><?php echo $fila['descripcionProducto']; ?></td>
+                    <td><?php echo $fila['Existencias']; ?></td>
+                    <td><?php echo $fila['idCategoria']; ?></td>
+                    <td><?php echo $fila['idEstado']; ?></td>
+                    <td><a href="../Controlador/Cmodificarproducto.php?idProducto=<?php echo $fila['idProducto'];?>">Modificar</a></td>
+                    
+                    
+            </tr> 
             <?php
             }
             ?>
         </tbody>
         </table>
-        <div class="contenedorfinalizar">
-            <a href="../Vista/php/logueado.php"  class="btn btn-success btn-block" id="botonfinalizar">IR A LA PAGINA PRINCIPAL</a>
-        </div>
-    </div>
-    </div>
-
-    <br>
+        <a href="../../InicioLogueado/logueado.php">FINALIZAR</a>
+    </div>  
+    </div>  
 
         <!-------------- footer------------ -->
 
-    <footer class="content-footer">
+        <footer class="content-footer">
 
-    <a href="https://www.facebook.com/fundacionbellaflor">
-        <img src="../Vista/img/logoBellaFlor.png" alt="" width="190px" height="100px">
-    </a>
-    <div>
-        <h2 class="titulo-final">&copy; Fundación Bella Flor | Grup-Zloty</h2>
-        <div class="diseñotime">
-            <script src="../js/time.js"></script>
-        </div>
-        <a class="nav-link btn btn-link" href="php/EquipoZloty.php" id="boton"> Equipo Zloty </a>
-    </div>
+            <a href="https://www.facebook.com/fundacionbellaflor">
+                <img src="../Vista/img/logoBellaFlor.png" alt="" width="190px" height="100px">
+            </a>
+            <div>
+                <h2 class="titulo-final">&copy; Fundación Bella Flor | Grup-Zloty</h2>
+                <div class="diseñotime">
+                    <script src="../js/time.js"></script>
+                </div>
+                <a class="nav-link btn btn-link" href="php/EquipoZloty.php" id="boton"> Equipo Zloty </a>
+            </div>
 
-    <img src="../Vista/img/bigblanco.png" alt="" width="180px" height="100px">
-    </footer>
+            <img src="../Vista/img/bigblanco.png" alt="" width="180px" height="100px">
+        </footer>
 
     <!------- js de bootstrap------------------- -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

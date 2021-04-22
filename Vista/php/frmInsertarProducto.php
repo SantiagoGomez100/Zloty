@@ -106,7 +106,8 @@
                 <form  action="../Controlador/Cinsetarproducto.php" method="post">
                     <center >
                         <div class="form-group">
-                            <input type="text" name="idProducto" class="form-control" placeholder="El id del Producto se mostrar en la Tabla" disabled autofocus  />
+                            <input type="text" name="idProducto" class="form-control" placeholder="El id del Producto se mostrará en la Tabla" 
+                            autofocus  />
                         </div>
                         <div class="form-group">
                             <input type="text" name="nombre_prod" class="form-control" placeholder="Nombre del Producto"/>

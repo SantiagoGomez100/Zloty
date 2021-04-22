@@ -5,7 +5,7 @@
     session_start();
 
     $id = $_SESSION['idUsuario'];
-
+    
     $nombre = $_REQUEST['nombre'];
     $apellido = $_REQUEST['apellido'];
     $cel = $_REQUEST['telefono'];
