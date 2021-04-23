@@ -42,6 +42,7 @@
                     ?>
                 </tbody>
                 </table>
+                <a href="CreporteUsuarios.php" type="button" id="colorbuttom" class="btn btn-primary" data-toggle="modal">GENERAR REPORTE</a>
 
             </div>
 

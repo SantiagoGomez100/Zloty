@@ -1,6 +1,6 @@
 <?php
     require_once "../Modelo/mantenerSesion.php";
-    require('../fpdf/fpdf.php');
+    require('../Libreria_FPDF/fpdf.php');
     class MyFPDF extends FPDF
     {
         // function Header()

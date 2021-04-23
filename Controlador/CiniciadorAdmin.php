@@ -1,6 +1,6 @@
 <?php
 
-    include ("../../Modelo/conexion.php");
+    include ("../Modelo/conexion.php");
 
 
     //$idUsuario = $_POST[""];
@@ -29,7 +29,7 @@
             $_SESSION['idUsuario'] =$usuario['idUsuario'];
         }
 
-        header("location: ../../Controlador/Cprincipaladmin.php");
+        header("location: ../Controlador/Cprincipaladmin.php");
     }
     else {
         echo'<script type="text/javascript">

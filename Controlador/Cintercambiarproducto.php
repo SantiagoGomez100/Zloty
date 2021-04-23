@@ -13,6 +13,6 @@
     $matrizProducto = $producto-> get_producto1($idProducto);
 
 
-    include "../Vista/html/frmIntercambiar.php";
+    include "../Vista/php/frmIntercambiar.php";
 
 ?>

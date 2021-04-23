@@ -59,7 +59,7 @@
                             <h1 class="tituloInicio">Registrate</h1>
                         </section>
                         <!-- formulario  -->
-                        <form action="guardarregistro.php" method="post">
+                        <form action="../../Controlador/Cguardarregistro.php" method="post">
                             <div class="form-row">
                                 <!-- nombre -->
                                 <div class="form-group ml-5">

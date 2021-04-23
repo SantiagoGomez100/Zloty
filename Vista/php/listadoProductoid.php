@@ -28,7 +28,7 @@
     <nav id="menu" class="navbar navbar-expand-lg fixed-top bg-pink">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="../../imagenes/bigblanco.png" alt="" height="80px" width="160px">
+                <img src="../Vista/img/bigblanco.png" alt="" height="80px" width="160px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -42,7 +42,7 @@
                         <div class="i">
                             <i class="fas fa-user-friends"></i>
                         </div>
-                        <a class="nav-link btn btn-link" href="../../InicioLogueado/logueado.php" style="color: #ffffff;">
+                        <a class="nav-link btn btn-link" href="../Vista/php/logueado.php" style="color: #ffffff;">
                           Volver</a>
                     </li>
                 </ul>

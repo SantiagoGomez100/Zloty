@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/principal.css">
-    <link rel="icon" href="../../imagenes/LOGOsolito.png">
+    <link rel="stylesheet" href="../Vista/css/principal.css">
+    <link rel="icon" href="../Vista/img/LOGOsolito.png">
     
 
     <title>Zloty - Bienvenido Usuario</title>
@@ -28,7 +28,7 @@
     <nav id="menu" class="navbar navbar-expand-lg fixed-top bg-pink">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="../../imagenes/bigblanco.png" alt="" height="80px" width="160px">
+                <img src="../Vista/img/bigblanco.png" alt="" height="80px" width="160px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -42,7 +42,7 @@
                         <div class="i">
                             <i class="fas fa-user-friends"></i>
                         </div>
-                        <a class="nav-link btn btn-link" href="../../InicioLogueado/logueado.php" style="color: #ffffff;">
+                        <a class="nav-link btn btn-link" href="../Vista/php/logueado.php" style="color: #ffffff;">
                           Volver</a>
                     </li>
                 </ul>
@@ -107,7 +107,7 @@
             ?>
         </tbody>
         </table>
-        <a href="../../InicioLogueado/logueado.php">FINALIZAR</a>
+        <a href="../Vista/php/logueado.php">FINALIZAR</a>
     </div>  
     </div>  
 
@@ -116,18 +116,18 @@
     <footer class="content-footer">
 
     <a href="https://www.facebook.com/fundacionbellaflor">
-        <img src="../../imagenes/logoBellaFlor.png" alt="" width="190px" height="100px">
+        <img src="../Vista/img/logoBellaFlor.png" alt="" width="190px" height="100px">
     </a>
     <div>
         
         <h2 class="titulo-final">&copy; Fundación Bella Flor | Grup-Zloty</h2>
         <div class="diseñotime">
-            <script src="js/time.js"></script>
+            <script src="../js/time.js"></script>
         </div>
         <a class="nav-link btn btn-link" href="php/EquipoZloty.php" >  Equipo Zloty </a>
     </div>
 
-    <img src="../../imagenes/bigblanco.png" alt="" width="180px" height="100px">
+    <img src="../Vista/img/bigblanco.png" alt="" width="180px" height="100px">
     </footer>
 
     <!------- js de bootstrap------------------- -->

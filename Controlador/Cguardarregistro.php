@@ -1,6 +1,6 @@
 <?php
 
-        include ("../../Modelo/conexion.php");
+        include ("../Modelo/conexion.php");
 
         $nombre = $_POST['nombre'];
         $apellido = $_POST['apellido'];
@@ -15,7 +15,7 @@
         if($consulta == 1){
                 echo'<script type="text/javascript">
                 alert("Usuario ya esta registrado.");
-                location="registro.php";
+                location="../Vista/php/registro.php";
                 </script>';
         }
         else{
@@ -23,7 +23,7 @@
                 $resultado = $conexion->query($sql);
                 echo'<script type="text/javascript">
                         alert("Usuario a sido registrado exitosamente. Ya puedes iniciar Sesión");
-                        location="../inicioSesion/iniciar-sesion.php";
+                        location="../Vista/php/iniciar-sesion.php";
                         </script>';
         }
 ?>
