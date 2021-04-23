@@ -96,7 +96,7 @@
                             <div class="i">
                                 <i class="fas fa-plus"></i>
                             </div>
-                                <a class="nav-link letracolor " href="cerrar-sesion.php " style="color: #ffffff;">
+                                <a class="nav-link letracolor " href="../../Controlador/Ccerrar-sesion.php " style="color: #ffffff;">
                             Cerrar Sesión
                             </a>
                         </li>

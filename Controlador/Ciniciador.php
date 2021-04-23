@@ -1,6 +1,6 @@
 <?php
 
-    include ("../../Modelo/conexion.php");
+    include ("../Modelo/conexion.php");
 
 
     //$idUsuario = $_POST[""];
@@ -29,7 +29,7 @@
             $_SESSION['idUsuario'] =$usuario['idUsuario'];
         }
 
-        header("location: ../php/logueado.php");
+        header("location: ../Vista/php/logueado.php");
     }
     else {
         echo'<script type="text/javascript">

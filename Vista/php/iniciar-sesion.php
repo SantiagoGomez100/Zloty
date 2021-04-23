@@ -44,7 +44,7 @@
                             <h1 class="tituloInicio">Inicio Sesión</h1>
                         </section>
                         <!-- formulario  -->
-                        <form action="iniciador.php" method="post">
+                        <form action="../../Controlador/Ciniciador.php" method="post">
                             <!-- email -->
                             <div class="form-group mt-4">
                                 <label for="Email" class="colorLabel">Email</label>

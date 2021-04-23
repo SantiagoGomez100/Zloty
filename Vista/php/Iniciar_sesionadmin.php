@@ -44,7 +44,7 @@
                             <h1 class="tituloInicio">Inicio Sesión Administrativo</h1>
                         </section>
                         <!-- formulario  -->
-                        <form action="iniciadorAdmin.php" method="post">
+                        <form action="../../Controlador/CiniciadorAdmin.php" method="post">
                             <!-- email -->
                             <div class="form-group mt-4">
                                 <label for="Email" class="colorLabel">Email</label>
