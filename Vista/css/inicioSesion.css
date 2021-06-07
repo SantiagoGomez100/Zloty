@@ -1,0 +1,147 @@
+/* backgroud fondo en general  */
+body {
+    background-color: #1d1d20;
+}
+
+/* titulo de inicio de sesion  */
+
+.tituloInicio {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    /* margin-top: 15%; */
+}
+
+/* Boton de inicio */
+.colorBoton {
+    text-decoration: none;
+    color: black;
+    background-color: rgba(107, 102, 102, 0.5);
+    box-shadow: 3px 4px 3px 4px #ec760750;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+.colorBoton:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #7a3c02b7;
+    box-shadow: 3px 4px 3px 4px rgba(255, 255, 255, 0.322);
+}
+
+/* label color con inputs */
+.colorLabel {
+    color: white;
+}
+
+.inputPeque {
+    background-color: #27292D;
+}
+
+.inputPeque:hover {
+    background-color: #27292D;
+    border: 2px solid #7a3c02b7;
+}
+
+/* contenedor de interno */
+.divInterno {
+    background-color: #27292D;
+    margin-top: 2%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px #ec760750;
+}
+
+/* Imagen background de letrero */
+.imagen {
+    width: 50%;
+    background-size: cover;
+    /* background-image: url(../image/compu.jpg); */
+    background: linear-gradient(to right, #b552249d, #7b4d3685, #0c082c81), url(../image/compu.jpg);
+
+    position: relative;
+}
+
+/* posicion del div */
+.caption {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+
+/* titulo que esta por encima del la imagen  */
+.letraImagen {
+    color: rgb(255, 249, 249);
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.textoicon {
+    width: 80%;
+    margin: 5% auto auto 10%;
+
+}
+
+.fa-check-circle {
+    color: #ec7607e5;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+
+
+.mensajeparrafo {
+    margin-left: 9%;
+    font-size: 25px;
+    margin-top: -8%;
+    color: white;
+    /* font-weight: lighter; */
+}
+
+/* boton de registate */
+.colorRegistro {
+    margin-left: 30%;
+    border: 2px solid #ec7607f6;
+    color: black;
+    width: 35%;
+    font-size: 18px;
+}
+
+.colorRegistro:hover {
+    margin-left: 30%;
+    background-color: #ec760757;
+    color: white;
+    width: 35%;
+    font-size: 18px;
+    border: 2px solid #ec7607f6;
+}
+
+/* olvidaste la contraseña */
+.fa-key {
+    color: #ec7607f6;
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+.olvidoContrase {
+    font-size: 15px;
+    margin-top: 50%;
+    color: #ec7607f6;
+    font-weight: lighter;
+    text-decoration: none;
+
+}
+
+.olvidoContrase:hover {
+    font-size: 15px;
+    margin-top:200px;
+    color: #ec7607f6;
+    font-weight: lighter;
+    text-decoration: none;
+}

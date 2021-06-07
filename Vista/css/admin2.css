@@ -1,0 +1,87 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #27292d;
+    background-size: 1700px;
+    background-repeat: no-repeat;
+    background-position: initial;
+
+}
+
+.tables2{
+
+    color: white;
+}
+
+.navimagen{
+
+    width: 20px;
+    height: 20px;
+}
+.small{
+    background: red;
+    width: 1%;
+}
+#colornav{
+
+    background-color: rgb(245, 119, 2);
+}
+
+#colornav:hover{
+
+    background-color: rgb(63, 33, 16);
+}
+
+
+#nuevodato{
+
+    background-color: rgb(236, 117, 109);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#nuevodato:hover{
+
+    background-color: darkslateblue;
+}
+
+#colorbuttom{
+
+    background-color: transparent;
+    color: rgb(240, 128, 0);
+    border-color: rgb(230, 111, 0);
+}
+
+#colorbuttom:hover{
+
+    background-color: rgb(238, 88, 18);
+    color: white;
+    border-color: rgb(243, 101, 6);
+}
+
+.texto{
+
+    color: white;
+    padding: 20px;
+}
+
+.titulos{
+
+    color: rgb(236, 111, 8);
+    text-align: center;
+}
+
+#alineacion{
+
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.texto2{
+
+    color: black;
+}

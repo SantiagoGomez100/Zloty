@@ -1,0 +1,555 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.brg-toglee {
+  color: white;
+  background-color: white;
+}
+.ajuste{
+  margin-top: 20%;
+}
+.contenedor {
+  padding: 60px 0;
+  width: 89%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+.titulo {
+  color: orangered;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+/* HEADER */
+
+header {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to right, #b05206ee, #b05206ee, #ec7607f6),
+    url(./imagenes/carrusel1.png);
+  background: linear-gradient(to right, #925726ee, #ac662dee, #ec7607f6),
+    url(./imagenes/carrusel2.png);
+  background: linear-gradient(to right, #c57411e3, #bb7c49f3, #8f5f298a),
+    url(./imagenes/carrusel3.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+
+.cuadro {
+  margin: auto;
+  padding: 0px;
+  border: 3px solid black;
+  padding-left: 100px 40px;
+  background: #27292d;
+  width: 1000px;
+  border-radius: 10px, 20pc, 15px, 15px;
+  box-shadow: 3px 7px 3px 7px rgb(1, 3, 14);
+}
+
+.imagencuadro {
+  float: right;
+  width: 350px;
+  height: 300px;
+}
+
+.titulocuadro {
+  padding: 35px;
+  color: orangered;
+}
+
+.frasecuadro {
+  padding: 33px;
+  color: orangered;
+  text-align: justify;
+}
+
+.separacionnav {
+  text-decoration: none;
+  padding-bottom: 40px;
+  margin-right: 40px;
+  color: white;
+  font-weight: normal;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+}
+.separacionnav:hover {
+  text-decoration: none;
+  padding-bottom: 40px;
+  margin-right: 40px;
+  color: white;
+  font-weight: bold;
+}
+.logo {
+  display: flex;
+  margin-left: 50px;
+}
+.colorletra {
+  color: black;
+}
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.contenedorletras {
+  width: 70%;
+  height: 250px;
+  color: rgb(255, 255, 255);
+
+  position: absolute;
+  top: 0;
+  bottom: 0px;
+  left: 260px;
+  margin: auto;
+
+  text-align: center;
+}
+
+.contenedorprincipal {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.primerocategoria {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.segundocategoria {
+  float: left;
+}
+
+.tercerocategoria {
+  color: #ffffff;
+  display: block;
+  padding: 10px 20px;
+}
+
+.colorprincipal {
+  color: #f1f1f1;
+}
+
+.colorprincipal:hover {
+  color: rgba(255, 81, 0, 0.719);
+  text-decoration: none;
+}
+
+.principal:hover .submenu {
+  display: table;
+}
+
+/* Submenu de Donaciones */
+
+.submenu {
+  margin: auto;
+  width: 200px;
+  height: 10px;
+  position: relative;
+  left: 0;
+  background: #27292d;
+  box-sizing: content-box;
+  display: none;
+  padding: 10px -50px;
+}
+
+.submenu .primerocategoria {
+  width: 20px;
+  display: table-cell;
+  box-sizing: border-box;
+}
+
+.submenu .primerocategoria:last-child {
+  border: none;
+}
+
+.tercerocategoria:hover {
+  color: #e45b0d;
+  text-decoration: transparent;
+}
+
+@keyframes cambiar {
+  0% {
+    margin-top: 0px;
+  }
+  20% {
+    margin-top: 0px;
+  }
+
+  25% {
+    margin-top: -70px;
+  }
+  40% {
+    margin-top: -70px;
+  }
+
+  45% {
+    margin-top: -140px;
+  }
+  80% {
+    margin-top: -140px;
+  }
+
+  85% {
+    margin-top: -70px;
+  }
+  95% {
+    margin-top: -70px;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
+}
+
+header .textos-header {
+  display: flex;
+  height: 430px;
+  width: 100%;
+  margin-top: 5%;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.textos-header h1 {
+  font-size: 50px;
+  color: white;
+}
+.textos-header h2 {
+  font-size: 30px;
+  color: white;
+  font-weight: 300;
+}
+
+.contenedor-sobre-nosotros {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* galeria */
+
+.portafolio {
+  background-color: #27292d;
+}
+
+.galeria-port {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.imagen-port {
+  width: 24%;
+  height: 250px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px 0 orangered;
+}
+.imagen-port > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hover-galeria {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0);
+  background-color: rgba(255, 81, 0, 0.719);
+  transition: transform 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s ease;
+}
+
+.hover-galeria p {
+  color: white;
+  margin-top: 170px;
+}
+.fa-exchange-alt {
+  font-size: 70px;
+  color: white;
+}
+.imagen-port:hover .hover-galeria {
+  transform: scale(1);
+  font-size: 20px;
+}
+
+/* Redes Sociales de la Fundacion */
+
+.cuadrofundacion {
+  border: 5px solid #e45b0d;
+  padding: 30px 30px;
+}
+
+.fundacion {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: auto;
+  color: #e45b0d;
+  text-align: center;
+}
+
+.iconos {
+  color: #e45b0d;
+  margin-left: 23.5%;
+}
+
+.iconos:hover {
+  color: #ac4408;
+}
+
+/* footer */
+
+footer {
+  background-color: #232528;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+}
+.content-footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  flex-direction: row;
+  border-bottom: 1px solid #cccc;
+}
+.content-foo {
+  text-align: center;
+}
+.content-foo h4 {
+  color: white;
+  border-bottom: 3px solid rgba(15, 15, 15, 0.666);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.content-foo p {
+  color: #ffff;
+}
+.titulo-final {
+  text-align: center;
+  font-size: 25px 0 0 0;
+  margin: 20px;
+  color: white;
+}
+.titulo-final {
+  text-align: center;
+  font-size: 24px;
+}
+
+/* navbar */
+
+.bg-pink {
+  background-color: transparent;
+  transition: all 1.5s ease;
+  color: white;
+  font-weight: lighter;
+}
+
+.main {
+  background-color: #232528;
+  color: #ffffff;
+}
+
+.fa-bars {
+  font-size: 30px;
+  color: #ffffff;
+}
+.colorBoton {
+  background-color: #ec7607f6;
+  color: aliceblue;
+  width: 50%;
+  font-size: 18px;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+.colorBoton:hover {
+  background-color: #ec7607f6;
+  color: aliceblue;
+  width: 50%;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+/* menucategoria */
+
+.dropdown-menu {
+  border: transparent;
+  font-weight: lighter;
+  background-color: #27292d;
+  font-weight: lighter;
+}
+
+/* extra carrusel */
+
+.height-carousel {
+  max-height: 600px;
+  min-width: 100%;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.group-color {
+  background: #00000073;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.group--color .containers {
+  background: #38383af1;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 15px;
+}
+
+.margin__title {
+  margin: 15px;
+  font-size: 1.8em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 100;
+}
+
+.main__txt {
+  padding: 8px;
+  text-align: center;
+}
+
+/* Video Principal */
+
+.navvideo{
+
+  text-align: center;
+  margin-top: 5%;
+}
+
+/* Diseño de Tiempo */
+
+.diseñotime{
+
+  color: #ffffff;
+  text-align: center;
+}
+
+/**/
+
+.list-group{
+
+  margin: 5%;
+}
+
+.botongroup{
+
+  color: #e45b0d;
+  background-color: rgb(0, 0, 0);
+  padding: 1%;
+}
+
+.containerzonacliente{
+
+  margin: 1%;
+  margin-left: 20%;
+}
+
+#atencioncliente{
+
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #e45b0d;
+  border: 1px solid  #b3490c;
+}
+
+#colorboton{
+
+  background-color: #e45b0d;
+  border: 2px solid #8f3b0b;
+}
+
+.accordion{
+
+  margin: 1% auto;
+}
+
+.card{
+
+  background-color: #232528;
+  margin: 1% auto;
+}
+
+#colorletracollaje{
+
+  color: #ac4408;
+  text-decoration: none;
+}
+
+/*Diseño de tablas de Donacion e Intercambio*/
+
+#boton{
+
+  color: #ac4408;
+}
+
+#boton:hover{
+
+  color: #74310d;
+  text-decoration: none;
+}
+
+.diseñotablas{
+
+  color: orange;
+  text-align: center;
+  padding: 60px 0;
+  width: 89%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.tablastexto{
+
+  color: white;
+  text-align: center;
+}
+
+.contenedorfinalizar{
+
+  padding: 30px 0;
+  width: 50%;
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+#botonfinalizar{
+
+  border-radius: 10px 10px 10px 10px;
+  border-color: #2b170c;
+  color: #ffffff;
+  background-color: #ac4408;
+}
