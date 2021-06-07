@@ -60,14 +60,26 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-sm">
+<<<<<<< HEAD
                                             <!-- iniciar -->    
                                             <input type="submit" name="enviar" value="Enviar" class="btn colorBoton ml-5 mt-3">
                                             
+=======
+                                            <!-- iniciar -->
+                                            <!-- <button type="submit" class="btn colorBoton mt-3"> -->
+                                                <!-- <a href="../inicioLogueado/inicio.html">Inicio Sesión</a> -->
+                                                <input type="submit" name="enviar" value="Enviar" class="btn colorBoton ml-5 mt-3">
+                                            </button>
+>>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
                                         </div>
                                         <!-- olvidarContraseña -->
                                         <div class="col-sm mt-3">
                                             <i class="fas fa-key"></i>
+<<<<<<< HEAD
                                             <a href="frmRecuperar-contrasena.php"
+=======
+                                            <a href="reanudar-contraseña.php"
+>>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
                                                 class="olvidoContrase">olvidaste tu clave</a>
                                         </div>
                                     </div>

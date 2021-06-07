@@ -34,7 +34,11 @@
     else {
         echo'<script type="text/javascript">
             alert("Usuario o Contraseña erronea, por favor intentelo de nuevo.");
+<<<<<<< HEAD
             location="../Vista/php/iniciar_sesionadmin.php";
+=======
+            location="iniciar_sesionadmin.php";
+>>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
             </script>';
     }
 

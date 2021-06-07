@@ -98,8 +98,13 @@
                     <td><?php echo $fila['nombreProducto']; ?></td>
                     <td><?php echo $fila['descripcionProducto']; ?></td>
                     <td><?php echo $fila['Existencias']; ?></td>
+<<<<<<< HEAD
                     <td><?php echo $fila['TipoCategoria']; ?></td>
                     <td><?php echo $fila['estado']; ?></td>
+=======
+                    <td><?php echo $fila['idCategoria']; ?></td>
+                    <td><?php echo $fila['idEstado']; ?></td>
+>>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
                     <td><a href="../Controlador/Cmodificarproducto.php?idProducto=<?php echo $fila['idProducto'];?>">Modificar</a></td>
                     
                     

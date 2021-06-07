@@ -2,7 +2,11 @@
     require_once ("../Modelo/mantenerSesion.php");
 
     $intercambio = $_POST ['tipoIntercambio'];
+<<<<<<< HEAD
     //$codigo_producto = $_POST['idProducto'];
+=======
+    $codigo_producto = $_POST['idProducto'];
+>>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
     $nombre = $_POST['nombre_prod'];
     $descripcion = $_POST['desc_prod'];
     $cantidad = $_POST['cantidad'];
@@ -36,7 +40,11 @@
     include "../Modelo/Mproducto.php";
         $producto = new ProductoModelo();//llamada al metodo constructor
 
+<<<<<<< HEAD
         $resultado = $producto -> insertar_producto($nombre,$descripcion,$cantidad,$fecha_entrada,$categoria,$estado,$idTipoIntercambio);
+=======
+        $resultado = $producto -> insertar_producto($codigo_producto,$nombre,$descripcion,$cantidad,$fecha_entrada,$categoria,$estado,$idTipoIntercambio);
+>>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
     include "Cproducto.php";
 
 ?>

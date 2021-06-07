@@ -126,14 +126,22 @@
 
           <div class="form-group col-md-10">
             <label for="inputAddress" style="color: white;">Telefono de contacto:</label>
+<<<<<<< HEAD
             <input type="number" class="form-control" name="telefono" value="<?php echo $matrizusuario[0]['telefono']; ?>"
+=======
+            <input type="text" class="form-control" name="telefono" value="<?php echo $matrizusuario[0]['telefono']; ?>"
+>>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
               placeholder="30000000" required>
           </div>
 
           <div class="form-group col-md-10">
             <label for="inputAddress" style="color: white;">Ciudad:</label>
             <select id="inputState" type="text" name="ciudad" value="<?php echo $matrizusuario[0]['ciudad']; ?>"
+<<<<<<< HEAD
               class="form-control controls" required>
+=======
+              class="form-control controls">
+>>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
               <option selected>Bogotá D.C</option>
               <option>Medellín</option>
               <option>Calí</option>
@@ -159,7 +167,12 @@
         <div class="container botones">
           <div class="row">
             <div class="col-sm">
+<<<<<<< HEAD
               <button type="submit" class="btn colorBoton "> Confirmar Cambios </button> </div>
+=======
+              <button type="submit" class="btn colorBoton "> <a href="logueado.php"
+                  style="text-decoration: none; color: white;">Confirmar Cambios</a> </button> </div>
+>>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
             <div class="col-sm">
               <button type="submit" class="btn colorBoton  "><a href="logueado.php"
                   style="text-decoration: none; color: white;">Cancelar </a> </button> </div>
