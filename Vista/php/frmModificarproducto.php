@@ -87,51 +87,31 @@
                     <tr>
                       <td>Codigo del Producto</td>
                       <td><label for="idProducto"></label>
-<<<<<<< HEAD
                         <input type="number" name="idProducto" id="idProducto" value ="<?php echo $matrizProducto[0]['idProducto'];?>" readonly />
-=======
-                        <input type="text" name="idProducto" id="idProducto" value ="<?php echo $matrizProducto[0]['idProducto'];?>" readonly />
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
                       </td>
                     </tr>
                     <tr>
                       <td>Nombre del Producto</td>
                       <td><label for="nombreProducto"></label>
-<<<<<<< HEAD
                         <input type="text" name="nombreProducto" id="nombreProducto" value ="<?php echo $matrizProducto[0]['nombreProducto'];?>" required/>
-=======
-                        <input type="text" name="nombreProducto" id="nombreProducto" value ="<?php echo $matrizProducto[0]['nombreProducto'];?>" />
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
                       </td>
                     </tr>
                     <tr>
                       <td>Descripcion del Producto</td>
                       <td><label for="descripcionProducto"></label>
-<<<<<<< HEAD
                         <input type="text" name="descripcionProducto" value ="<?php echo $matrizProducto[0]['descripcionProducto'];?>"required />
-=======
-                        <input type="text" name="descripcionProducto" value ="<?php echo $matrizProducto[0]['descripcionProducto'];?>" />
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
                       </td>
                     </tr>
                     <tr>
                       <td>Existencias</td>
                       <td><label for="Existencias"></label>
-<<<<<<< HEAD
                         <input type="number" name="Existencias" value ="<?php echo $matrizProducto[0]['Existencias'];?>" required/>
-=======
-                        <input type="text" name="Existencias" value ="<?php echo $matrizProducto[0]['Existencias'];?>" />
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
                       </td>
                     </tr>
                     <tr>
                       <td>Categoria</td>
                       <td>
-<<<<<<< HEAD
                       <select name="cate_prod" class="form-control" placeholder="categoria del producto" method="post" required >
-=======
-                      <select name="cate_prod" class="form-control" placeholder="categoria del producto" method="post" >
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
                                 <option value="">Seleccione</option>
                                 <option value="Juguetes" >Juguetes
                                 </option>
@@ -142,11 +122,7 @@
                     <tr>
                       <td>Estado</td>
                       <td>
-<<<<<<< HEAD
                       <select name="estado_prod" class="form-control" placeholder="estado del producto" method="post" required>
-=======
-                      <select name="estado_prod" class="form-control" placeholder="estado del producto" method="post" >
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
                                 <option value="">Seleccione</option>
                                 <option value="Bueno" >Bueno</option>
                                 <option value="Regular">Regular</option>

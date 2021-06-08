@@ -58,11 +58,7 @@
                     <th class="tables2" scope="col">Nick</th>
                     <th class="tables2" scope="col">Email</th>
                     <th class="tables2" scope="col">Telefono</th>
-<<<<<<< HEAD
                     
-=======
-                    <th class="tables2" scope="col">Acción</th>
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
                     <th class="tables2" scope="col"></th>
                     </tr>
                 </thead>
@@ -80,19 +76,6 @@
                         <td class="tables2"><?php echo $fila['numeroTelefono']; ?></td>
 
 
-<<<<<<< HEAD
-=======
-                        <td>
-                        <!-- Trigger the modal with a button -->
-                            <button type="button" id="colorbuttom" class="btn btn-primary" data-toggle="modal" data-target="#modificaradmin"
-                                    onclick="
-                                    <?php $idUsuario = $_REQUEST['idUsuario']; $mod = new Administrador(); $matrizmod = $mod->get_administrador1($idAdmin); ?>">
-                                Modificar
-                            </button>
-
-
-                        </td>
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
                     </tr>
                     <?php
                     }

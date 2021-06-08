@@ -106,7 +106,6 @@
                 <form  action="../Controlador/Cinsetarproducto.php" method="post">
                     <center >
                         <div class="form-group">
-<<<<<<< HEAD
                             <input type="number" name="idProducto" class="form-control" placeholder="Id del Producto " 
                             autofocus  required/>
                         </div> 
@@ -122,32 +121,11 @@
                         </div>
                         <div class="form-group">
                         <input name="fecha_entrada"   class="form-control"   type="date" name="fecha_entrada" id="fecha_entrada" placeholder="fecha entrada" required>
-=======
-                            <input type="text" name="idProducto" class="form-control" placeholder="El id del Producto se mostrará en la Tabla" 
-                            autofocus  />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="nombre_prod" class="form-control" placeholder="Nombre del Producto"/>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="desc_prod" class="form-control" placeholder="Descripcion del Producto"/>
-                        </div>
-
-                        <div class="form-group">
-                            <input name="cantidad"  class="form-control" placeholder="Cantidad" >
-                        </div>
-                        <div class="form-group">
-                        <input name="fecha_entrada"   class="form-control"   type="date" name="fecha_entrada" id="fecha_entrada" placeholder="fecha entrada">
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
 
                         </div>
                         <div>
                         <class class="from-group">
-<<<<<<< HEAD
                             <select name="tipoIntercambio" class="form-control" placeholder="Categoria del Producto" method="post" required >
-=======
-                            <select name="tipoIntercambio" class="form-control" placeholder="Categoria del Producto" method="post" >
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
                                 <option value="">Tipo de Intercambio</option>
                                 <option value="Juguetes" >Donacion</option>
                                 <option value="Accesorios">Trueque</option>
@@ -156,11 +134,7 @@
                         </div>
                         <br>
                         <class class="from-group">
-<<<<<<< HEAD
                             <select name="cate_prod" class="form-control" placeholder="Categoria del Producto" method="post" required>
-=======
-                            <select name="cate_prod" class="form-control" placeholder="Categoria del Producto" method="post" >
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
                                 <option value="">Categoria</option>
                                 <option value="Juguetes" >Juguetes</option>
                                 <option value="Accesorios">Accesorios</option>
@@ -169,11 +143,7 @@
                         <br>
                         <class class="from-group">
 
-<<<<<<< HEAD
                             <select name="estado_prod" class="form-control" placeholder="Estado del Producto" method="post" required>
-=======
-                            <select name="estado_prod" class="form-control" placeholder="Estado del Producto" method="post" >
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
                                 <option value="">Estado</option>
                                 <option value="Bueno" >Bueno</option>
                                 <option value="Regular">Regular</option>

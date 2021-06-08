@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<< HEAD
 require_once "../Modelo/conectar.php";  
-=======
-require_once "../Modelo/conectar.php";
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
 require_once "../Modelo/mantenerSesion.php";
 class Administrador
 {

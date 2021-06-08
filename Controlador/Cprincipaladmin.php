@@ -1,8 +1,8 @@
 <?php
    
 
-    require_once("../Modelo/conectar.php");
-    require_once("../Modelo/Madministrador.php");
+    require_once "../Modelo/conectar.php";
+    require_once "../Modelo/Madministrador.php";
     // Llama a las tablas.
     $usuario = new Administrador();
     $matrizusuarios = $usuario->get_usuario();
@@ -16,6 +16,6 @@
     $matrizmod = $mod->get_administrador1($idAdmin);
 
     include ("../Vista/php/modoAdministrador.php");
-    include ("../Vista/php/usuarios_admin.php");
+    include_once ("../Vista/php/usuarios_admin.php");
 
 ?>

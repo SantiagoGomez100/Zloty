@@ -5,11 +5,11 @@
         session_destroy();
         echo'<script type="text/javascript">
             alert("Debes iniciar sesion para ver esta pagina, Acceso totalemente denegado a usuarios comunes.");
-<<<<<<< HEAD
+
             location="../Vista/php/iniciar_sesionadmin.php";
-=======
+
             location="../../index.php";
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
+
             </script>';
         exit;
     }
@@ -44,11 +44,7 @@
             <span id="colornav" class="social">
                 <a href="#twitter"><i class="fas fa-user-ninja"></i></a>
                 <a href="#fb"><i class="fas fa-bahai"></i></a>
-<<<<<<< HEAD
                 <a href="Ccerrar-sesion.php"><i class="fas fa-sign-out-alt"></i></a>
-=======
-                <a href="#insta"><i class="fas fa-sign-out-alt"></i></a>
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
             </span>
         </div>
     </div>

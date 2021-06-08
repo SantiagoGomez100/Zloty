@@ -4,12 +4,7 @@
     require_once ('../Modelo/MmodificarPerfil.php');
     session_start();
 
-<<<<<<< HEAD
     $id = $_SESSION['idUsuario'];    
-=======
-    $id = $_SESSION['idUsuario'];
-    
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
     $nombre = $_REQUEST['nombre'];
     $apellido = $_REQUEST['apellido'];
     $cel = $_REQUEST['telefono'];

@@ -30,13 +30,8 @@
                 <form  action="../Controlador/Cinforme.php" method="post">
                     <center >
                         <div class=" col-md-4">
-<<<<<<< HEAD
                             <input type="number" name="idUsuario" class="form-control" placeholder="Ingrese el código del usuario" 
                             autofocus required />
-=======
-                            <input type="text" name="idUsuario" class="form-control" placeholder="Ingrese el código del usuario" 
-                            autofocus  />
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
                         </div>
                        <br>
                         <input name="guardar" type="submit" class="btn btn-success btn-block col-md-4" value="Generar Reporte" style=" background: orange;" />

@@ -26,7 +26,6 @@ class ProductoModelo
     }
     public function get_productoid($id)
     {
-<<<<<<< HEAD
         $consulta = $this->conexion_db->query("SELECT inter.idProducto, gp.nombreProducto, gp.descripcionProducto, gp.Existencias, cat.TipoCategoria, est.estado
         FROM intercambio as inter
         JOIN gestionarproducto as gp JOIN categoria as cat JOIN estado as est ON gp.idProducto= inter.idProducto WHERE idUsuario = '$id' AND gp.idCategoria = cat.idCategoria AND gp.idEstado = est.idEstado");
@@ -37,15 +36,6 @@ class ProductoModelo
             $this->producto[] = $filas;
         }
 
-=======
-        $consulta = $this->conexion_db->query("SELECT inter.idProducto, gp.nombreProducto, gp.descripcionProducto, gp.Existencias, gp.idCategoria, gp.idEstado
-        FROM intercambio as inter
-        JOIN gestionarproducto as gp ON gp.idProducto= inter.idProducto WHERE idUsuario = '$id'");
-
-        while ($filas = $consulta->fetch_assoc()) {
-            $this->producto[] = $filas;
-        }
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
         $this->conexion_db->close();
         return $this->producto;
     }
@@ -60,7 +50,6 @@ class ProductoModelo
         return $this->producto;
     }
 
-<<<<<<< HEAD
     public function insertar_producto($nombre,$descripcion,$cantidad,$fecha_entrada,$categoria,$estado,$idTipoIntercambio)
     {
         $idusuario = $_SESSION['idUsuario'];
@@ -75,17 +64,6 @@ class ProductoModelo
             $resultado =$this->conexion_db->query("INSERT INTO intercambio (idTipoIntercambio, idUsuario, idProducto, cantidad) VALUES ('$idTipoIntercambio','$idusuario', '$codigo_producto','$cantidad');"); 
             
         } 
-=======
-    public function insertar_producto($codigo_producto,$nombre,$descripcion,$cantidad,$fecha_entrada,$categoria,$estado,$idTipoIntercambio)
-    {
-        $resultado = $this->conexion_db->query("INSERT INTO gestionarproducto (idProducto, nombreProducto,descripcionProducto,existencias, idCategoria, idEstado) VALUES ('$codigo_producto','$nombre','$descripcion','$cantidad ','$categoria', '$estado');");
-        $idusuario = $_SESSION['idUsuario'];
-        
-        if ($resultado) {
-            $resultado =$this->conexion_db->query("INSERT INTO intercambio (idTipoIntercambio, idUsuario, idProducto, cantidad) VALUES ('$idTipoIntercambio','$idusuario', '$codigo_producto','$cantidad');"); 
-            
-        }
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
 
         $this->conexion_db->close();
         return $resultado;
@@ -101,7 +79,6 @@ class ProductoModelo
     }
     public function modificar2_producto($idProducto, $nombreProducto, $descripcionProducto, $cantidadSelec)
     {
-<<<<<<< HEAD
         $idusuario = $_SESSION['idUsuario'];
 
         $sql = "UPDATE gestionarproducto SET nombreProducto ='$nombreProducto', descripcionProducto ='$descripcionProducto',Existencias = Existencias - $cantidadSelec  WHERE idProducto = '$idProducto';";
@@ -112,11 +89,6 @@ class ProductoModelo
             $resultado =$this->conexion_db->query("INSERT INTO intercambio (idTipoIntercambio, idUsuario, idProducto, cantidad) VALUES (2,'$idusuario', '$idProducto','$cantidadSelec');"); 
             
         } 
-=======
-        $sql = "UPDATE gestionarproducto SET nombreProducto ='$nombreProducto', descripcionProducto ='$descripcionProducto',Existencias = Existencias - $cantidadSelec  WHERE idProducto = '$idProducto';";
-
-        $resultado = $this->conexion_db->query($sql);
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
 
         $this->conexion_db->close();
         return $resultado;

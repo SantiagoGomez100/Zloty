@@ -100,31 +100,19 @@
                     <tr>
                       <td>Nombre del Producto</td>
                       <td><label for="nombreProducto"></label>
-<<<<<<< HEAD
                         <input type="text" name="nombreProducto" id="nombreProducto" value ="<?php echo $matrizProducto[0]['nombreProducto'];?>" readonly />
-=======
-                        <input type="text" name="nombreProducto" id="nombreProducto" value ="<?php echo $matrizProducto[0]['nombreProducto'];?>" />
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
                       </td>
                     </tr>
                     <tr>
                       <td>Descripcion del Producto</td>
                       <td><label for="descripcionProducto"></label>
-<<<<<<< HEAD
                         <input type="text" name="descripcionProducto" value ="<?php echo $matrizProducto[0]['descripcionProducto'];?>" readonly/>
-=======
-                        <input type="text" name="descripcionProducto" value ="<?php echo $matrizProducto[0]['descripcionProducto'];?>" />
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
                       </td>
                     </tr>
                     <tr>
                       <td>Cantidad del Producto</td>
                       <td><label for="cantidadSelec"></label>
-<<<<<<< HEAD
                         <input type="number" name="cantidadSelec" <?php $matrizProducto[0]['Existencias'];?> required/>
-=======
-                        <input type="text" name="cantidadSelec" <?php $matrizProducto[0]['Existencias'];?> />
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
                       </td>
                     </tr>
 

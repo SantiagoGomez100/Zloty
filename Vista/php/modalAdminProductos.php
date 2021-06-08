@@ -103,11 +103,7 @@
              </div>
              <div class="modal-body">
                  <p class="text-center tables2">¿Esta seguro de Borrar el registro?</p>
-<<<<<<< HEAD
                  <h2 class="text-center tables2" ><?php echo $fila['nombreProducto'].' '; ?></h2>
-=======
-                 <h2 class="text-center tables2"><?php echo $fila['nombreProducto'].' '; ?></h2>
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
              </div>
              <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>

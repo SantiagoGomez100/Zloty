@@ -27,7 +27,6 @@
                      <div class="mb-3">
                          <label for="exampleInputText" class="form-label tables2">Nombre</label>
                          <input type="text" class="form-control" id="nombre" name="nombre"
-<<<<<<< HEAD
                              aria-describedby="emailHelp" value="<?php echo $matrizUsuario1[0]['nombre'];?>" required>
                      </div>
                      <div class="mb-3">
@@ -46,26 +45,6 @@
                             <label for="exampleInputText" class="form-label tables2" >Ciudad </label>
                             <select id="inputState" value="<?php echo $matrizUsuario[0]['ciudad'];?>" type="text"
                                 name="ciudad" class="form-control controls" required>
-=======
-                             aria-describedby="emailHelp" value="<?php echo $matrizUsuario1[0]['nombre'];?>">
-                     </div>
-                     <div class="mb-3">
-                         <label for="exampleInputText" class="form-label tables2">Apellido</label>
-                         <input type="text" class="form-control" id="exampleInputPassword1" name="apellido" value="<?php echo $matrizUsuario1[0]['apellido'];?>">
-                     </div>
-                     <div class="mb-3">
-                         <label for="exampleInputText" class="form-label tables2">Email </label>
-                         <input type="text" class="form-control" id="exampleInputPassword1" name="email" value="<?php echo $matrizUsuario1[0]['email'];?>">
-                     </div>
-                     <div class="mb-3">
-                         <label for="exampleInputText" class="form-label tables2">Telefono </label>
-                         <input type="text" class="form-control" id="exampleInputPassword1" name="telefono" value="<?php echo $matrizUsuario1[0]['telefono'];?>">
-                     </div>
-                     <div class="mb-3">
-                            <label for="exampleInputText" class="form-label tables2">Ciudad </label>
-                            <select id="inputState" value="<?php echo $matrizUsuario[0]['ciudad'];?>" type="text"
-                                name="ciudad" class="form-control controls">
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
                                 <option selected>Bogotá D.C</option>
                                 <option>Medellín</option>
                                 <option>Calí</option>

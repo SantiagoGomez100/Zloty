@@ -1,32 +1,9 @@
 <?php
-<<<<<<< HEAD
     //require_once "../Modelo/MmantenerSesionAdmin.php";
     require('../Libreria_FPDF/fpdf.php');
     class MyFPDF extends FPDF
     {
        
-=======
-    require_once "../Modelo/mantenerSesion.php";
-    require('../Libreria_FPDF/fpdf.php');
-    class MyFPDF extends FPDF
-    {
-        // function Header()
-        // {
-
-        // // $this->SetFont("Arial", "B", 10);
-        // // $this->Cell(60);
-        // // $this->setTextColor(200,40,40);
-        // // $this->Cell(70, 10, "Productos donados por: ".$_SESSION['nombre'], 1, 1, "C");
-        // // $this->Ln(20);
-        // // $this->setTextColor(20,20,255);
-        // // $this->Cell(20,10,'Id',1,0,'C',0);
-        // // $this->Cell(30,10,'Nombre',1,0,'C',0);
-        // // $this->Cell(50,10,'Descripcion',1,0,'C',0);
-        // // $this->Cell(30,10,'Existencias',1,0,'C',0);
-        // // $this->Cell(30,10,'Categoria',1,0,'C',0);
-        // // $this->Cell(30,10,'Estado',1,1,'C',0);
-        // }
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
         function Footer()
         {
         $this->setTextColor(120,120,155);
@@ -77,13 +54,8 @@
         $pdf->Cell(30,10,$row['nombreProducto'],1,0,'C',0);
         $pdf->Cell(50,10,$row['descripcionProducto'],1,0,'C',0);
         $pdf->Cell(30,10,$row['Existencias'],1,0,'C',0);
-<<<<<<< HEAD
         $pdf->Cell(30,10,$row['TipoCategoria'],1,0,'C',0);
         $pdf->Cell(30,10,$row['estado'],1,1,'C',0);
-=======
-        $pdf->Cell(30,10,$row['idCategoria'],1,0,'C',0);
-        $pdf->Cell(30,10,$row['idEstado'],1,1,'C',0);
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
 
     }
 

@@ -167,12 +167,7 @@
         <div class="container botones">
           <div class="row">
             <div class="col-sm">
-<<<<<<< HEAD
               <button type="submit" class="btn colorBoton "> Confirmar Cambios </button> </div>
-=======
-              <button type="submit" class="btn colorBoton "> <a href="logueado.php"
-                  style="text-decoration: none; color: white;">Confirmar Cambios</a> </button> </div>
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
             <div class="col-sm">
               <button type="submit" class="btn colorBoton  "><a href="logueado.php"
                   style="text-decoration: none; color: white;">Cancelar </a> </button> </div>
