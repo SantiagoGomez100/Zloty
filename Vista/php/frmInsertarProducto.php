@@ -105,10 +105,10 @@
                 <div class="card-img-top">
                 <form  action="../Controlador/Cinsetarproducto.php" method="post">
                     <center >
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <input type="number" name="idProducto" class="form-control" placeholder="Id del Producto " 
                             autofocus  required/>
-                        </div> 
+                        </div>  -->
                         <div class="form-group">
                             <input type="text" name="nombre_prod" class="form-control" placeholder="Nombre del Producto" required/>
                         </div>

@@ -27,7 +27,6 @@
                      <div class="mb-3">
                          <label for="exampleInputText" class="form-label tables2">Nombre</label>
                          <input type="text" class="form-control" id="nombre" name="nombre"
-<<<<<<< HEAD
                              aria-describedby="emailHelp" value="<?php echo $matrizProducto1[0]['nombreProducto'];?>" required>
                      </div>
                      <div class="mb-3">
@@ -41,21 +40,6 @@
                      <div class="mb-3">
                          <label for="exampleInputText" class="form-label tables2">Categoria </label>                         
                          <select name="categoria" class="form-control" placeholder="categoria del producto" method="post" required>
-=======
-                             aria-describedby="emailHelp" value="<?php echo $matrizProducto1[0]['nombreProducto'];?>">
-                     </div>
-                     <div class="mb-3">
-                         <label for="exampleInputText" class="form-label tables2">Descripcion</label>
-                         <input type="text" class="form-control" id="exampleInputPassword1" name="descripcion" value="<?php echo $matrizProducto1[0]['descripcionProducto'];?>">
-                     </div>
-                     <div class="mb-3">
-                         <label for="exampleInputText" class="form-label tables2">Existencias </label>
-                         <input type="text" class="form-control" id="exampleInputPassword1" name="existencias" value="<?php echo $matrizProducto1[0]['Existencias'];?>">
-                     </div>
-                     <div class="mb-3">
-                         <label for="exampleInputText" class="form-label tables2">Categoria </label>                         
-                         <select name="categoria" class="form-control" placeholder="categoria del producto" method="post" >
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
                                 <option value="">Seleccione</option>
                                 <option value="Juguetes" >Juguetes
                                 </option>
@@ -64,11 +48,7 @@
                      </div>
                      <div class="mb-3">
                          <label for="exampleInputText" class="form-label tables2">Estado </label>
-<<<<<<< HEAD
                          <select name="estado" class="form-control" placeholder="estado del producto" method="post" required>
-=======
-                         <select name="estado" class="form-control" placeholder="estado del producto" method="post" >
->>>>>>> 992b040e81f206fe9e05e057a2719cdf54d4a159
                                 <option value="">Seleccione</option>
                                 <option value="Bueno" >Bueno</option>
                                 <option value="Regular">Regular</option>

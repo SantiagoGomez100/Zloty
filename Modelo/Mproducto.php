@@ -54,12 +54,14 @@ class ProductoModelo
     {
         $idusuario = $_SESSION['idUsuario'];
 
-        /*  $trigger = $this->conexion_db->query("CREATE TRIGGER insertar_intercambio AFTER INSERT ON gestionarproducto 
-        FOR EACH ROW 
-        INSERT INTO intercambio (idTipoIntercambio, idUsuario, cantidad, idProducto) VALUES ('$idTipoIntercambio','$idusuario', NEW.idProducto,'$cantidad');");  */
-
+        
         $resultado = $this->conexion_db->query("INSERT INTO gestionarproducto ( nombreProducto,descripcionProducto,existencias, idCategoria, idEstado) VALUES ('$nombre','$descripcion','$cantidad ','$categoria', '$estado');");
-                
+
+        $query = $this->conexion_db->query("SELECT @@IDENTITY AS 'Identity';");  
+
+        if ($row = mysqli_fetch_row($query)){
+            $codigo_producto = trim($row[0]);
+        }       
          if ($resultado) {
             $resultado =$this->conexion_db->query("INSERT INTO intercambio (idTipoIntercambio, idUsuario, idProducto, cantidad) VALUES ('$idTipoIntercambio','$idusuario', '$codigo_producto','$cantidad');"); 
             
