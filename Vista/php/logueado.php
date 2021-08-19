@@ -153,15 +153,8 @@
             <!-- Zona de Atencion al Cliente -->
 
             <div class="containerzonacliente">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"
-            id="atencioncliente">
-                Quejas</button>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat"
-            id="atencioncliente">
-                Reclamos</button>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap"
-            id="atencioncliente">
-                Sugerencias</button>
+                
+                
 
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
