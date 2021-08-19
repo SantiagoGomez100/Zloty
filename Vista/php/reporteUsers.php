@@ -4,24 +4,6 @@
     class MyFPDF extends FPDF
     {
 
-        // function Header()
-        // {
-
-        // $this->SetFont("Arial", "B", 10);
-        // $this->Cell(60);
-        // $this->setTextColor(200,40,40);
-
-        // $this->Cell(70, 10, "LISTADO DE USUARIOS: ", 1, 1, "C");
-
-        // $this->Ln(20);
-        // $this->setTextColor(20,20,255);
-        // $this->Cell(20,10,'Id',1,0,'C',0);
-        // $this->Cell(30,10,'Nombre',1,0,'C',0);
-        // $this->Cell(40,10,'Apellido',1,0,'C',0);
-        // $this->Cell(40,10,'E-mail',1,0,'C',0);
-        // $this->Cell(30,10,'Telefono',1,0,'C',0);
-        // $this->Cell(30,10,'Ciudad',1,1,'C',0);
-        // }
         function Footer()
         {
         $this->setTextColor(120,120,155);
